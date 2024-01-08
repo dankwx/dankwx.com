@@ -1,0 +1,8 @@
+{
+	"Classname in JSX and TSX": {
+	  "prefix": "cn",
+	  "body": ["className={styles.${1:yourClassName}}"],
+	  "description": "Add className in JSX and TSX"
+	}
+  }
+  
