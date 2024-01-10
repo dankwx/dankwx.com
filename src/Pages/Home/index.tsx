@@ -6,8 +6,8 @@ import PasswordProtection from "../PasswordProtection";
 export default function Home() {
   return (
     <div className={styles.mainWrapper}>
-      <Navbar />
       <PasswordProtection correctPassword={"danielzika@12"}>
+        <Navbar />
         <div className={styles.home}>
           <h1>Daniel</h1>
           <h1>Kondlatsch</h1>
