@@ -20,11 +20,11 @@ export default function Home() {
             <div className={styles.projectsList}>
               <div className={styles.projectItem}>
                 <a className={styles.projectNumber}>01</a>
-                <a className={styles.projectName}>daniel</a>
+                <a>Minecraft Smart House</a>
               </div>
               <div className={styles.projectItem}>
                 <a className={styles.projectNumber}>02</a>
-                <a className={styles.projectName}>web</a>
+                <a>CopiaCola</a>
               </div>
             </div>
           </div>
