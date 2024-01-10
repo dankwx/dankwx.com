@@ -1,9 +1,11 @@
 @import "../../assets/styles/variables";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap");
 
 .mainWrapper {
   width: 100vw;
-  height: fit-content;
+  height: 100vh;
   overflow: auto;
   box-sizing: border-box;
   margin: 0;
@@ -11,18 +13,48 @@
   display: flex;
   flex-direction: column;
   background-color: $primary-color;
-  font-family: "Open Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
   .home {
     display: flex;
     flex-direction: column;
-    height: 80vh;
-    background-color: red;
     justify-content: center;
     padding-top: 2rem;
-
-    h1 {
-      color: white;
-      font-size: 5rem;
+    .description {
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      background-color: red;
+      align-items: end;
+      a {
+        color: white;
+        font-size: 5rem;
+      }
+    }
+    .projects {
+      display: flex;
+      flex-direction: column;
+      height: 40vh;
+      background-color: yellow;
+      font-size: 1.2rem;
+      font-family: DM Mono, monospace;
+      .projectsTitle {
+        color: rgb(34, 35, 32);
+      }
+      a {
+        color: rgb(19, 19, 18);
+      }
+      .projectsList {
+        .projectItem {
+          display: flex;
+          margin-top: 0.6rem;
+          .projectNumber {
+            color: rgb(226, 74, 74);
+          }
+          a {
+            margin-right: 1rem;
+          }
+        }
+      }
     }
   }
 }

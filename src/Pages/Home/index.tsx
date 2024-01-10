@@ -9,10 +9,25 @@ export default function Home() {
       <PasswordProtection correctPassword={"danielzika@12"}>
         <Navbar />
         <div className={styles.home}>
-          <h1>Daniel</h1>
-          <h1>Kondlatsch</h1>
-          <h1>Web</h1>
-          <h1>Developer</h1>
+          <div className={styles.description}>
+            <a>Daniel</a>
+            <a>Kondlatsch</a>
+            <a>Web</a>
+            <a>Developer</a>
+          </div>
+          <div className={styles.projects}>
+            <a className={styles.projectsTitle}>Projetos</a>
+            <div className={styles.projectsList}>
+              <div className={styles.projectItem}>
+                <a className={styles.projectNumber}>01</a>
+                <a className={styles.projectName}>daniel</a>
+              </div>
+              <div className={styles.projectItem}>
+                <a className={styles.projectNumber}>02</a>
+                <a className={styles.projectName}>web</a>
+              </div>
+            </div>
+          </div>
         </div>
       </PasswordProtection>
     </div>

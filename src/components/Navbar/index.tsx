@@ -5,8 +5,8 @@ export default function Navbar() {
     <div className={styles.navbarWrapper}>
       <a className={styles.logo}>{"< />"}</a>
       <ul className={styles.navLinks}>
-        <li>Home</li>
-        <li>Projetos</li>
+        <li>LinkedIn</li>
+        <li>Github</li>
       </ul>
     </div>
   );
