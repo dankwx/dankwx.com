@@ -1,13 +1,12 @@
 .navbarWrapper {
   box-sizing: border-box;
   width: 100%;
-  height: 10%;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
   .logo {
     font-family: "Lucida Console", Monaco, monospace;
-
     line-height: 0.8em;
     text-shadow: 0 0 5px rgba(100, 100, 100, 0.5);
     color: white;

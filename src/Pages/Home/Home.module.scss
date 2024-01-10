@@ -3,11 +3,26 @@
 
 .mainWrapper {
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
+  overflow: auto;
   box-sizing: border-box;
   margin: 0;
   padding: 1rem 10rem;
   display: flex;
+  flex-direction: column;
   background-color: $primary-color;
   font-family: "Open Sans", sans-serif;
+  .home {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: red;
+    justify-content: center;
+    padding-top: 2rem;
+
+    h1 {
+      color: white;
+      font-size: 5rem;
+    }
+  }
 }
