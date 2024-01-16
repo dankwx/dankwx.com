@@ -22,6 +22,9 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
+    span{
+      font-size: 0.4em;
+    }
   }
   @keyframes textclip {
     to {
@@ -35,11 +38,21 @@
     color: white;
     li {
       margin-right: 2rem;
+      display: flex;
       cursor: pointer;
       transition: color 0.3s ease;
 
       &:hover {
         color: #c2b7b7;
+      }
+      .socialIco {
+        width: 30px;
+        height: 30px;
+        margin-right: .4em;
+      }
+      a {
+        color: inherit; // Para herdar a cor do texto do elemento pai
+        text-decoration: none; // Para remover a decoração do link
       }
     }
   }

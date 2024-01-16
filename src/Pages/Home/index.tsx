@@ -12,8 +12,8 @@ export default function Home() {
           <div className={styles.description}>
             <a>Daniel</a>
             <a>Kondlatsch</a>
-            <a>Web</a>
-            <a>Developer</a>
+            <a className={styles.descriptionSmall}>Front-End Developer</a>
+            {/* {/* <a>Web</a> */}
           </div>
           <div className={styles.projects}>
             <a className={styles.projectsTitle}>Projetos</a>
