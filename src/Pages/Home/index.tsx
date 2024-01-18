@@ -4,8 +4,9 @@ import Navbar from "../../components/Navbar";
 import PasswordProtection from "../PasswordProtection";
 import experienceIco from "../../assets/experience.png";
 import efficiencyIco from "../../assets/efficiency.png";
-import githubIcon from "../../assets/github-white.png"
-import websiteIco from "../../assets/website-white.png"
+import githubIcon from "../../assets/github-white.png";
+import websiteIco from "../../assets/website-white.png";
+import minePrint from "../../assets/print.png";
 
 export default function Home() {
   return (
@@ -51,18 +52,27 @@ export default function Home() {
                 <div className={styles.projectLinks}>
                   <div className={styles.linkItem}>
                     <img src={githubIcon} alt="" />
-                    <p>GitHub</p>
+                    <a
+                      href="https://github.com/dankwx/minecraft-irl-interaction"
+                      target="_blank"
+                    >
+                      GitHub
+                    </a>
                   </div>
                   <div className={styles.linkItem}>
                     <img src={websiteIco} alt="" />
-                    <p>Website</p>
+                    <a
+                      href="https://www.google.com.br/"
+                      target="_blank"
+                    >
+                      Website
+                    </a>
                   </div>
                 </div>
-
               </div>
               <div className={styles.sectionRight}>
-                <img src="https://picsum.photos/900/455" alt="" />
-
+                {/* <img src="https://picsum.photos/900/455" alt="" /> */}
+                <img src={minePrint} alt="" />
               </div>
             </div>
           </div>
