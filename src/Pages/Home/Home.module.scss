@@ -182,6 +182,35 @@
             border-radius: 15px;
           }
         }
+        .projectDescription {
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          p {
+            font-size: 1.4em;
+            color: white;
+            font-family: DM Sans;
+          }
+          .projectBadges {
+            width: 100%;
+            height: 5vh;
+            display: flex;
+            .badgeItem {
+              display: flex;
+              align-items: center;
+              padding-top: 2.6em;
+              margin-right: 1.6em;
+              img {
+                width: 30px;
+                height: 30px;
+                margin-right: 0.6em;
+              }
+              p {
+                font-size: 1.2em;
+              }
+            }
+          }
+        }
       }
     }
   }

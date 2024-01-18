@@ -7,6 +7,8 @@ import efficiencyIco from "../../assets/efficiency.png";
 import githubIcon from "../../assets/github-white.png";
 import websiteIco from "../../assets/website-white.png";
 import minePrint from "../../assets/print.png";
+import reactICo from "../../assets/react.png";
+import luaIco from "../../assets/lua.png";
 
 export default function Home() {
   return (
@@ -61,17 +63,30 @@ export default function Home() {
                   </div>
                   <div className={styles.linkItem}>
                     <img src={websiteIco} alt="" />
-                    <a
-                      href="https://www.google.com.br/"
-                      target="_blank"
-                    >
+                    <a href="https://www.google.com.br/" target="_blank">
                       Website
                     </a>
                   </div>
                 </div>
+                <div className={styles.projectDescription}>
+                  <p>
+                    Meu projeto mais ambicioso. Este projeto permite a interação
+                    de um mundo no Minecraft com a internet. Uma Smart House, só
+                    que no Minecraft
+                  </p>
+                  <div className={styles.projectBadges}>
+                    <div className={styles.badgeItem}>
+                      <img src={reactICo} alt="" />
+                      <p>React.js</p>
+                    </div>
+                    <div className={styles.badgeItem}>
+                      <img src={luaIco} alt="" />
+                      <p>Lua</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div className={styles.sectionRight}>
-                {/* <img src="https://picsum.photos/900/455" alt="" /> */}
                 <img src={minePrint} alt="" />
               </div>
             </div>
