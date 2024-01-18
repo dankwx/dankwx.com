@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@700;900&display=swap');
 
 
 .mainWrapper {
@@ -23,7 +24,7 @@
     #141852 50%,
     #070b34 100%
   );
-  background: linear-gradient(0deg, #2b2f77 0%, #141852 50%, #070b34 100%);
+  background: #0a0908;
 
   pre {
     // Adicionando efeito de rotação constante
@@ -57,11 +58,13 @@
       a {
         color: white;
         font-size: 8em;
-        font-weight:800;
+        font-weight:700;
+        font-family: 'Roboto', sans-serif;
       }
       .descriptionSmall{
         font-size: 5em;
-        color: #5056bf;
+        color: #49111c;
+        font-family: "DM Sans";
       }
     }
     .projects {
