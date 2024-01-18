@@ -34,11 +34,13 @@
   .navLinks {
     list-style: none;
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: white;
     li {
       margin-right: 2rem;
       display: flex;
+      justify-content: center;
+      align-items: center;
       cursor: pointer;
       transition: color 0.3s ease;
 
