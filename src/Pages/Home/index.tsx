@@ -171,7 +171,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.sectionRight}>
-                <img src="https://picsum.photos/1000/1200" alt="" />
+                <img src="https://picsum.photos/1000/1300" alt="" />
               </div>
             </div>
           </div>
