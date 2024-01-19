@@ -133,6 +133,7 @@
         height: 45vh;
         padding-top: 1em;
         display: flex;
+        margin-bottom: 2rem;
         .sectionLeft {
           width: 50%;
           height: 100%;
@@ -174,11 +175,11 @@
           background-color: $secondary-color;
           border-radius: 15px;
           overflow: hidden;
-          padding-top: 1em;
           padding-left: 1em;
 
           img {
             width: fit-content;
+            height: fit-content;
             border-radius: 15px;
           }
         }
