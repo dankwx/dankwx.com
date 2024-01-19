@@ -132,6 +132,48 @@ export default function Home() {
                 <img src="https://picsum.photos/1000/1200" alt="" />
               </div>
             </div>
+            <div className={styles.projectItem}>
+              <div className={styles.sectionLeft}>
+                <p>Diário</p>
+                <div className={styles.projectLinks}>
+                  <div className={styles.linkItem}>
+                    <img src={githubIcon} alt="" />
+                    <a
+                      href="https://github.com/dankwx/minecraft-irl-interaction"
+                      target="_blank"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                  <div className={styles.linkItem}>
+                    <img src={websiteIco} alt="" />
+                    <a href="https://www.google.com.br/" target="_blank">
+                      Website
+                    </a>
+                  </div>
+                </div>
+                <div className={styles.projectDescription}>
+                  <p>
+                    Um projeto simples que fiz a um tempo atrás
+                    usando React, para eu guardar anotações e pensamentos,
+                    não contém informações pessoais ou sensíveis.
+                  </p>
+                  <div className={styles.projectBadges}>
+                    <div className={styles.badgeItem}>
+                      <img src={reactICo} alt="" />
+                      <p>React.js</p>
+                    </div>
+                    <div className={styles.badgeItem}>
+                      <img src={luaIco} alt="" />
+                      <p>Lua</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.sectionRight}>
+                <img src="https://picsum.photos/1000/1200" alt="" />
+              </div>
+            </div>
           </div>
           <div className={styles.slideWrapper}>
           
