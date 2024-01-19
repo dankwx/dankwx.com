@@ -1,6 +1,7 @@
 import "../../assets/styles/reset.css"; // reset css
 import styles from "./Home.module.scss";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import PasswordProtection from "../PasswordProtection";
 import experienceIco from "../../assets/experience.png";
 import efficiencyIco from "../../assets/efficiency.png";
@@ -178,6 +179,7 @@ export default function Home() {
           <div className={styles.slideWrapper}>
           
           </div>
+          <Footer />
         </div>
       </PasswordProtection>
     </div>
