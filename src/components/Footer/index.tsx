@@ -4,9 +4,10 @@ export default function Footer() {
     return (
         
         <div className={styles.footerWrapper}>
-        <h1>
-        Teste Footer
-        </h1>
+            <div className={styles.footerDescription}>
+                <p>Orgulhosamente criado por Daniel Kondlatsch</p>
+                <p>❤️</p>
+            </div>
         </div>
         )
 }
