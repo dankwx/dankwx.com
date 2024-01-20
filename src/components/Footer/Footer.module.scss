@@ -15,8 +15,15 @@
         p{
             font-family: Open Sans;
             color: white;
+            margin-bottom: 1em;
         }
-        
+        .sociasIcons{
+            display: flex;
+            flex-direction: row;
+            svg{
+                margin-right: 0.6em;
+            }
+        }
         
         
     }
