@@ -58,13 +58,14 @@ export default function Home() {
                     <a
                       href="https://github.com/dankwx/minecraft-irl-interaction"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       GitHub
                     </a>
                   </div>
                   <div className={styles.linkItem}>
                     <img src={websiteIco} alt="" />
-                    <a href="https://www.google.com.br/" target="_blank">
+                    <a href="https://www.google.com.br/" target="_blank" rel="noreferrer"> 
                       Website
                     </a>
                   </div>
@@ -100,13 +101,14 @@ export default function Home() {
                     <a
                       href="https://github.com/dankwx/minecraft-irl-interaction"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       GitHub
                     </a>
                   </div>
                   <div className={styles.linkItem}>
                     <img src={websiteIco} alt="" />
-                    <a href="https://www.google.com.br/" target="_blank">
+                    <a href="https://www.google.com.br/" target="_blank" rel="noreferrer">
                       Website
                     </a>
                   </div>
@@ -142,13 +144,14 @@ export default function Home() {
                     <a
                       href="https://github.com/dankwx/minecraft-irl-interaction"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       GitHub
                     </a>
                   </div>
                   <div className={styles.linkItem}>
                     <img src={websiteIco} alt="" />
-                    <a href="https://www.google.com.br/" target="_blank">
+                    <a href="https://www.google.com.br/" target="_blank" rel="noreferrer"> 
                       Website
                     </a>
                   </div>
