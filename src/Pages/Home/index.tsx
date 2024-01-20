@@ -28,10 +28,7 @@ export default function Home() {
                 Fascinado por programação, segurança web, experiência de usuário
                 e acessibilidade
               </p>
-              <p>
-                <br />
-                ˗ˏˋ ♡ ˎˊ˗
-              </p>
+              <hr />
             </div>
           </div>
           <div className={styles.badgesWrapper}>
@@ -48,7 +45,6 @@ export default function Home() {
             <div className={styles.titleSection}>
               <h1>Projetos</h1>
             </div>
-            <hr />
             <div className={styles.projectItem}>
               <div className={styles.sectionLeft}>
                 <p>Minecraft Smart Hub</p>
@@ -65,7 +61,11 @@ export default function Home() {
                   </div>
                   <div className={styles.linkItem}>
                     <img src={websiteIco} alt="" />
-                    <a href="https://www.google.com.br/" target="_blank" rel="noreferrer"> 
+                    <a
+                      href="https://www.google.com.br/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Website
                     </a>
                   </div>
@@ -108,16 +108,20 @@ export default function Home() {
                   </div>
                   <div className={styles.linkItem}>
                     <img src={websiteIco} alt="" />
-                    <a href="https://www.google.com.br/" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://www.google.com.br/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Website
                     </a>
                   </div>
                 </div>
                 <div className={styles.projectDescription}>
                   <p>
-                    Projeto feito para uma necessidade. Facilita a 
-                    transferência de textos por telefone a computador
-                    e vice-versa, mantendo a estrutura do texto.
+                    Projeto feito para uma necessidade. Facilita a transferência
+                    de textos por telefone a computador e vice-versa, mantendo a
+                    estrutura do texto.
                   </p>
                   <div className={styles.projectBadges}>
                     <div className={styles.badgeItem}>
@@ -151,16 +155,20 @@ export default function Home() {
                   </div>
                   <div className={styles.linkItem}>
                     <img src={websiteIco} alt="" />
-                    <a href="https://www.google.com.br/" target="_blank" rel="noreferrer"> 
+                    <a
+                      href="https://www.google.com.br/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Website
                     </a>
                   </div>
                 </div>
                 <div className={styles.projectDescription}>
                   <p>
-                    Um projeto simples que fiz a um tempo atrás
-                    usando React, para eu guardar anotações e pensamentos,
-                    não contém informações pessoais ou sensíveis.
+                    Um projeto simples que fiz a um tempo atrás usando React,
+                    para eu guardar anotações e pensamentos, não contém
+                    informações pessoais ou sensíveis.
                   </p>
                   <div className={styles.projectBadges}>
                     <div className={styles.badgeItem}>
@@ -179,9 +187,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={styles.slideWrapper}>
-          
-          </div>
+          <div className={styles.slideWrapper}></div>
           <Footer />
         </div>
       </PasswordProtection>
