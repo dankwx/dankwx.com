@@ -41,6 +41,26 @@ export default function Home() {
               <p>Projetos Pessoais com Casos Reais</p>
             </div>
           </div>
+          <div className={styles.aboutWrapper}>
+            <div className={styles.profileSection}>
+              <img
+                src="https://i.pinimg.com/564x/b7/b3/c4/b7b3c4d875429de1696f17a32b5eb253.jpg"
+                alt=""
+              />
+            </div>
+            <div className={styles.aboutDescription}>
+            <p>
+              Estou criando sites para a internet, para meus jogos favoritos e
+              para meus familiares desde 2012. Após começar minha graduação em 
+              Engenharia de Software e conseguir minha primeira experiência
+              no mercado como desenvolvedor React, fiquei mais maduro em
+              questões de acessibilidade e segurança em páginas. Também
+              consolidou ainda mais minha vontade de continuar desenvolvendo
+              projetos na área de tecnologia
+            </p>
+            </div>
+            
+          </div>
           <div className={styles.projectsWrapper}>
             <div className={styles.titleSection}>
               <h1>Projetos</h1>
