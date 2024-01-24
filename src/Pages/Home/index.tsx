@@ -10,8 +10,16 @@ import websiteIco from "../../assets/website-white.png";
 import minePrint from "../../assets/print.png";
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
+import {useState} from 'react';
 
 export default function Home() {
+  
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const handleModalOpen = () => setModalOpen(true);
+  const handleModalClose = () => setModalOpen(false);
+  
+  
   return (
     <div className={styles.mainWrapper}>
       <PasswordProtection correctPassword={"danielzika@12"}>
@@ -32,10 +40,21 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.badgesWrapper}>
-            <div className={styles.badgeItem}>
-              <img className={styles.badgeIco} src={experienceIco} alt="" />
-              <p>1 Ano de Experiência no Mercado</p>
+            <div className={styles.badgeItem} onClick={handleModalOpen}>
+            <img className={styles.badgeIco} src={experienceIco} alt="" />
+            <p>1 Ano de Experiência no Mercado</p>
             </div>
+             {/* Renderize o Modal com as informações desejadas */}
+      {isModalOpen && (
+        <div className={styles.modalOverlay} onClick={handleModalClose}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+            <span className={styles.closeButton} onClick={handleModalClose}>
+              &times;
+            </span>
+            <p>Parabéns por completar 1 ano de experiência no mercado!</p>
+          </div>
+        </div>
+      )}
             <div className={styles.badgeItem}>
               <img className={styles.badgeIco} src={efficiencyIco} alt="" />
               <p>Projetos Pessoais com Casos Reais</p>
