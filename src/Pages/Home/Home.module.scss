@@ -42,6 +42,21 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 8rem;
+    position: relative;
+    
+    .modalOverlay{
+      background-color: black;
+      height: 20%;
+      width: 100%;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+          
+      p{
+        color: white;
+      }
+    }
 
     .description {
       display: flex;
