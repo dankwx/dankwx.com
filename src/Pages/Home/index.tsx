@@ -25,7 +25,7 @@ export default function Home() {
           <div className={styles.resume}>
             <div className={styles.resumeDescription}>
               <p>
-                Fascinado por programação, segurança web, experiência de usuário
+                Comprometido com a programação, segurança web, experiência de usuário
                 e acessibilidade
               </p>
               <hr />
