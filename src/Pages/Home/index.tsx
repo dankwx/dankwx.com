@@ -42,7 +42,7 @@ export default function Home() {
           <div className={styles.badgesWrapper}>
             <div className={styles.badgeItem} onClick={handleModalOpen}>
             <img className={styles.badgeIco} src={experienceIco} alt="" />
-            <p>1 Ano de Experiência no Mercado</p>
+            <p className={styles.experienceModal}>1 Ano de Experiência no Mercado</p>
             </div>
              {/* Renderize o Modal com as informações desejadas */}
       {isModalOpen && (
