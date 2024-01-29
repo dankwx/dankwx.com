@@ -45,18 +45,21 @@
     position: relative;
     
     .modalOverlay{
-      background-color: gray;
+      background-color:grey;
+      display: flex;
+      justify-content: center;
       border-radius: 20px;
       border-size:2px;
       border: 4px solid;
       border-color: $secondary-color;
       height: 50%;
-      width: 70%;
-      padding: 3em;
-      overflow: scroll;
+      width: 50%;
+      overflow-y: scroll;
+      overflow-x: hidden;
       position: fixed;
       top: 50%;
       left: 50%;
+      padding-top: 1em;
       transform: translate(-50%, -50%);
       animation: fadeIn 0.1s ease-in-out;
       @keyframes fadeIn {
@@ -69,13 +72,20 @@
 }
           
       .modalContent{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
         height: 100%;
+        padding-top: 1em;
+
         
         .closeButton{
-          color:white;
+          color:$terciary-color;
           font-size:1.5em;
           cursor: pointer;
+          position: sticky;
+          top: 5%;
+          margin-left: 80%;
         }
         
         .modalTitle{
@@ -84,6 +94,11 @@
         font-family: DM Sans;
         font-weight: 600;
         margin-bottom: 1em;
+      }
+      
+      .modalDescription{
+        font-family: DM Sans;
+        font-weight: 600;
       }
       }
       

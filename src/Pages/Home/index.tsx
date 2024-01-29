@@ -52,7 +52,7 @@ export default function Home() {
               {/* botao de fechar  &times; */}Fechar
             </span>
             <p className={styles.modalTitle}>Minhas experiências de trabalho</p>
-            <p>Trabalhei 1 ano como desenvolvedor Front-End na Compass.uol,
+            <p className={styles.modalDescription}>Trabalhei 1 ano como desenvolvedor Front-End na Compass.uol,
             uma empresa de inovação tecnológica. Minha tarefas, em detalhe, foram:
             </p>
           </div>
