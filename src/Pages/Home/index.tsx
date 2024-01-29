@@ -49,9 +49,12 @@ export default function Home() {
         <div className={styles.modalOverlay} onClick={handleModalClose}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <span className={styles.closeButton} onClick={handleModalClose}>
-              {/* botao de fechar  &times; */}
+              {/* botao de fechar  &times; */}Fechar
             </span>
-            <p>Parabéns por completar 1 ano de experiência no mercado!</p>
+            <p className={styles.modalTitle}>Minhas experiências de trabalho</p>
+            <p>Trabalhei 1 ano como desenvolvedor Front-End na Compass.uol,
+            uma empresa de inovação tecnológica. Minha tarefas, em detalhe, foram:
+            </p>
           </div>
         </div>
       )}
