@@ -55,6 +55,20 @@ export default function Home() {
             <p className={styles.modalDescription}>Trabalhei 1 ano como desenvolvedor Front-End na Compass.uol,
             uma empresa de inovação tecnológica. Minha tarefas, em detalhe, foram:
             </p>
+            <hr />
+            <div className={styles.experienceWrapper}>
+            <img
+                src="https://funlec.com.br/wp-content/uploads/2023/09/Logo_Poliedro_Horiz_SIST_ENSINO.png"
+                alt=""
+              />
+            <p className={styles.experienceTitle}>Shadow na equipe da Poliedro</p>
+            
+            <p className={styles.experienceDescription}> Trabalhei por 6 meses como shadow
+            da equipe da Poliedro, onde fiz pequenas correções e implementações de features simples
+            no sistema de livros PDF e provas online que o sistema de educação online Poliedro
+            providencia.
+            </p>
+            </div>
           </div>
         </div>
       )}
