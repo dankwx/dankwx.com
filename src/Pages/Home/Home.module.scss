@@ -83,6 +83,7 @@
           border-size: 100px;
           border-color: black;
           background-color: black;
+          margin-top: 2em;
         }
 
         
@@ -116,9 +117,11 @@
         height: auto;
         display: flex;
         flex-direction: column;
+        margin-bottom: 2em;
         
         img{
           width: 200px;
+          margin-bottom: 1em;
         }
         
         .experienceTitle{
@@ -130,6 +133,10 @@
       
       .experienceDescription{
         font-size: 1em;
+        
+        strong{
+          font-weight: 600;
+        }
       }
       }
       }
