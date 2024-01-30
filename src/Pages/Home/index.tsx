@@ -10,8 +10,16 @@ import websiteIco from "../../assets/website-white.png";
 import minePrint from "../../assets/print.png";
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
+import {useState} from 'react';
 
 export default function Home() {
+  
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const handleModalOpen = () => setModalOpen(true);
+  const handleModalClose = () => setModalOpen(false);
+  
+  
   return (
     <div className={styles.mainWrapper}>
       <PasswordProtection correctPassword={"danielzika@12"}>
@@ -25,21 +33,86 @@ export default function Home() {
           <div className={styles.resume}>
             <div className={styles.resumeDescription}>
               <p>
-                Fascinado por programação, segurança web, experiência de usuário
+                Comprometido com a programação, segurança web, experiência de usuário
                 e acessibilidade
               </p>
               <hr />
             </div>
           </div>
           <div className={styles.badgesWrapper}>
-            <div className={styles.badgeItem}>
-              <img className={styles.badgeIco} src={experienceIco} alt="" />
-              <p>1 Ano de Experiência no Mercado</p>
+            <div className={styles.badgeItem} onClick={handleModalOpen}>
+            <img className={styles.badgeIco} src={experienceIco} alt="" />
+            <p className={styles.experienceModal}>1 Ano de Experiência no Mercado</p>
             </div>
+             {/* Renderize o Modal com as informações desejadas */}
+      {isModalOpen && (
+        <div className={styles.modalOverlay} onClick={handleModalClose}>
+          <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+            <span className={styles.closeButton} onClick={handleModalClose}>
+              {/* botao de fechar  &times; */}Fechar
+            </span>
+            <p className={styles.modalTitle}>Minhas experiências de trabalho</p>
+            <p className={styles.modalDescription}>Trabalhei 1 ano como desenvolvedor Front-End na Compass.uol,
+            uma empresa de inovação tecnológica. Minha tarefas, em detalhe, foram:
+            </p>
+            
+            <div className={styles.experienceWrapper}>
+            <img
+                src="https://funlec.com.br/wp-content/uploads/2023/09/Logo_Poliedro_Horiz_SIST_ENSINO.png"
+                alt=""
+              />
+            <p className={styles.experienceTitle}>Shadow na equipe da Poliedro</p>
+            
+            <p className={styles.experienceDescription}> Atuei por <strong>6 meses</strong> como shadow
+            da equipe da Poliedro, onde fiz pequenas correções e implementações de features simples
+            no sistema de livros PDF e provas online que o sistema de educação online Poliedro
+            providencia. <br />Usei <strong>React</strong>, <strong>Styled Components</strong> e   
+            <strong> Scrum</strong> como metodologia ágil pelo sistema
+            <strong> Azure DevOps</strong> (Kanbam, Pipelines e Git) da Microsoft.
+            <hr />
+            </p>
+            </div>
+            <div className={styles.experienceWrapper}>
+            <img
+                src="https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo-1.png"
+                alt=""
+              />
+            <p className={styles.experienceTitle}>Front-end Developer na equipe da Sicredi</p>
+            
+            <p className={styles.experienceDescription}> Atuei por <strong>6 meses</strong> como
+            desenvolvedor Front-end na equipe da Sicredi, migrando seu projeto inteiramente em
+            <strong> Angular</strong>, para React. Também criei pequenas features nas páginas de consulta por CPF.
+            Utilizei <strong>React</strong>, <strong>Styled Components</strong> com versionamento e controle de Pipelines pelo <strong>GitLab</strong>,
+            também utilizei <strong>Scrum</strong> como metodologia ágil da equipe.
+            </p>
+            </div>
+          </div>
+        </div>
+      )}
             <div className={styles.badgeItem}>
               <img className={styles.badgeIco} src={efficiencyIco} alt="" />
               <p>Projetos Pessoais com Casos Reais</p>
             </div>
+          </div>
+          <div className={styles.aboutWrapper}>
+            <div className={styles.profileSection}>
+              <img
+                src="https://i.pinimg.com/564x/b7/b3/c4/b7b3c4d875429de1696f17a32b5eb253.jpg"
+                alt=""
+              />
+            </div>
+            <div className={styles.aboutDescription}>
+            <p>
+              Estou criando sites para a internet, para meus jogos favoritos e
+              para meus familiares desde 2012. Após começar minha graduação em 
+              Engenharia de Software e conseguir minha primeira experiência
+              no mercado como desenvolvedor React, fiquei mais maduro em
+              questões de acessibilidade e segurança em páginas. Também
+              consolidou ainda mais minha vontade de continuar desenvolvendo
+              projetos na área de tecnologia
+            </p>
+            </div>
+            
           </div>
           <div className={styles.projectsWrapper}>
             <div className={styles.titleSection}>
