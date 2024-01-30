@@ -11,6 +11,7 @@ import minePrint from "../../assets/print.png";
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
 import {useState} from 'react';
+import React from "react";
 
 export default function Home() {
   
