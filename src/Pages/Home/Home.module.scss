@@ -42,6 +42,123 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 8rem;
+    position: relative;
+    
+    .modalOverlay{
+      background-color:white;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+      border-size:2px;
+      border: 4px solid;
+      border-color: $secondary-color;
+      height: 70%;
+      width: 50%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      padding-top: 1em;
+      transform: translate(-50%, -50%);
+      animation: fadeIn 0.1s ease-in-out;
+      @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+          
+      .modalContent{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        padding-top: 1em;
+        
+        hr{
+          border-radius: 50px;
+          border-size: 100px;
+          border-color: black;
+          background-color: black;
+          margin-top: 2em;
+        }
+
+        
+        .closeButton{
+          color:black;
+          font-size:1.5em;
+          font-weight: 900;
+          cursor: pointer;
+          position: sticky;
+          top: 5%;
+          margin-left: 100%;
+        }
+        
+        .modalTitle{
+        color: $secondary-color;
+        font-size: 2.2em;
+        font-family: DM Sans;
+        font-weight: 600;
+        margin-bottom: 1em;
+      }
+      
+      .modalDescription{
+        font-family: DM Sans;
+        font-weight: 600;
+        margin-bottom: 2em;
+        font-size: 1.2em;
+      }
+      
+      .experienceWrapper{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+        
+        img{
+          width: 200px;
+          margin-bottom: 1em;
+        }
+        
+        .experienceTitle{
+        font-size: 2em;
+        font-family: DM Sans;
+        font-weight: 600;
+        margin-bottom: 1em;
+      }
+      
+      .experienceDescription{
+        font-size: 1em;
+        
+        strong{
+          font-weight: 600;
+        }
+      }
+      }
+      p:last-child{
+        margin-bottom: 2em;
+      }
+      }
+      
+
+    }
+    
+    .modalOverlay::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    .modalOverlay::-webkit-scrollbar-track {
+      background-color: darkgrey;
+    }
+    
+    .modalOverlay::-webkit-scrollbar-thumb {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
 
     .description {
       display: flex;
@@ -100,11 +217,33 @@
           height: 40px;
         }
         p {
-          color: white;
           padding-left: 1em;
           font-size: 1.2em;
           color: $terciary-color;
         }
+        .experienceModal {
+        // Defina as propriedades iniciais
+        cursor: pointer;
+        transform: translateY(0);
+      
+        // Defina a animação
+        animation: bouncing 1s infinite;
+      }
+      
+      // Defina os keyframes para a animação de bouncing
+      @keyframes bouncing {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+      
+        40% {
+          transform: translateY(-10px);
+        }
+      
+        60% {
+          transform: translateY(-5px);
+        }
+      }
       }
     }
 
