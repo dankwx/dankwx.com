@@ -79,12 +79,11 @@ export default function Home() {
               />
             <p className={styles.experienceTitle}>Front-end Developer na equipe da Sicredi</p>
             
-            <p className={styles.experienceDescription}> Atuei por <strong>6 meses</strong> como shadow
-            da equipe da Poliedro, onde fiz pequenas correções e implementações de features simples
-            no sistema de livros PDF e provas online que o sistema de educação online Poliedro
-            providencia. <br />Usei <strong>React</strong>, <strong>Styled Components</strong> e   
-            <strong> Scrum</strong> como metodologia ágil pelo sistema
-            <strong> Azure DevOps</strong> (Kanbam, Pipelines e Git) da Microsoft.
+            <p className={styles.experienceDescription}> Atuei por <strong>6 meses</strong> como
+            desenvolvedor Front-end na equipe da Sicredi, migrando seu projeto inteiramente em
+            <strong> Angular</strong>, para React. Também criei pequenas features nas páginas de consulta por CPF.
+            Utilizei <strong>React</strong>, <strong>Styled Components</strong> com versionamento e controle de Pipelines pelo <strong>GitLab</strong>,
+            também utilizei <strong>Scrum</strong> como metodologia ágil da equipe.
             </p>
             </div>
           </div>
