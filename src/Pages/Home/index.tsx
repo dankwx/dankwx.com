@@ -27,7 +27,7 @@ export default function Home() {
         <Navbar />
         <div className={styles.home}>
           <div className={styles.description}>
-            <a>Daniel Kondlatsch</a>
+            <a className={styles.name}>Daniel Kondlatsch</a>
             <a className={styles.descriptionSmall}>Front-End Developer</a>
             {/* {/* <a>Web</a> */}
           </div>

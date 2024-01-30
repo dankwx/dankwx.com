@@ -56,6 +56,7 @@
       width: 40%;
       overflow-y: scroll;
       overflow-x: hidden;
+      z-index: 2;
       scroll-behavior: smooth;
       scrollbar-color: red;
       position: fixed;
@@ -169,12 +170,35 @@
       height: fit-content;
       margin-bottom: 1.8em;
       align-items: flex-start;
-      a {
-        color: #606c38;
-        font-size: 7em;
-        font-weight: 700;
-        font-family: "Roboto", sans-serif;
-      }
+      .name {
+      color: #606c38;
+      font-size: 7em;
+      font-weight: 700;
+      font-family: "Roboto", sans-serif;
+      position: relative;
+      z-index: 1; /* Adicionei esta linha */
+    }
+
+    .name::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      inset: 0 0 0 0;
+      background: #fefae0;
+      z-index: -1;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease;
+    }
+
+    .name:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
       .descriptionSmall {
         font-size: 4em;
         color: white;
