@@ -35,7 +35,7 @@
     list-style: none;
     display: flex;
     font-size: 1.3rem;
-    color: white;
+    color: #fefae0;
     li {
       margin-right: 2rem;
       display: flex;
@@ -47,9 +47,8 @@
       &:hover {
         color: #c2b7b7;
       }
-      .socialIco {
-        width: 30px;
-        height: 30px;
+      svg {
+
         margin-right: .4em;
       }
       a {

@@ -11,6 +11,7 @@ import minePrint from "../../assets/print.png";
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
 import {useState} from 'react';
+import React from "react";
 
 export default function Home() {
   
@@ -26,7 +27,7 @@ export default function Home() {
         <Navbar />
         <div className={styles.home}>
           <div className={styles.description}>
-            <a>Daniel Kondlatsch</a>
+            <a className={styles.name}>Daniel Kondlatsch</a>
             <a className={styles.descriptionSmall}>Front-End Developer</a>
             {/* {/* <a>Web</a> */}
           </div>
@@ -49,7 +50,7 @@ export default function Home() {
         <div className={styles.modalOverlay} onClick={handleModalClose}>
           <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
             <span className={styles.closeButton} onClick={handleModalClose}>
-              {/* botao de fechar  &times; */}Fechar
+              {/* botao de fechar  &times; */}&times;
             </span>
             <p className={styles.modalTitle}>Minhas experiências de trabalho</p>
             <p className={styles.modalDescription}>Trabalhei 1 ano como desenvolvedor Front-End na Compass.uol,
