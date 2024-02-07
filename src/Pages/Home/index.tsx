@@ -1,5 +1,4 @@
 import "../../assets/styles/reset.css"; // reset css
-import styles from "./Home.module.scss";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import PasswordProtection from "../PasswordProtection";
@@ -12,6 +11,7 @@ import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
 import {useState} from 'react';
 import React from "react";
+import styles from "./Home.module.scss";
 
 export default function Home() {
   
@@ -20,6 +20,10 @@ export default function Home() {
   const handleModalOpen = () => setModalOpen(true);
   const handleModalClose = () => setModalOpen(false);
   
+  function isScreenSmall() {
+  return window.innerWidth <= 576;
+}
+  const shouldRenderComponent = isScreenSmall();
   
   return (
     <div className={styles.mainWrapper}>
@@ -27,6 +31,9 @@ export default function Home() {
         <Navbar />
         <div className={styles.home}>
           <div className={styles.description}>
+          {shouldRenderComponent && (
+            <a className={styles.name}>Oi. sou o</a>
+          )}
             <a className={styles.name}>Daniel Kondlatsch</a>
             <a className={styles.descriptionSmall}>Front-End Developer</a>
             {/* {/* <a>Web</a> */}

@@ -32,6 +32,7 @@
     0% {
       transform: rotate(0deg);
     }
+
     100% {
       transform: rotate(360deg);
     }
@@ -43,13 +44,13 @@
     justify-content: center;
     padding-top: 8rem;
     position: relative;
-    
-    .modalOverlay{
+
+    .modalOverlay {
       background-color: #fefae0;
       display: flex;
       justify-content: center;
       border-radius: 20px;
-      border-size:2px;
+      border-size: 2px;
       border: 4px solid;
       border-color: #606c38;
       height: 70%;
@@ -65,23 +66,25 @@
       padding-top: 1em;
       transform: translate(-50%, -50%);
       animation: fadeIn 0.1s ease-in-out;
+
       @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-          
-      .modalContent{
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      .modalContent {
         display: flex;
         flex-direction: column;
         width: 80%;
         height: 100%;
         padding-top: 1em;
-        
-        hr{
+
+        hr {
           border-radius: 50px;
           border-size: 100px;
           border-color: black;
@@ -89,76 +92,77 @@
           margin-top: 2em;
         }
 
-        
-        .closeButton{
-          color:black;
-          font-size:1.5em;
+
+        .closeButton {
+          color: black;
+          font-size: 1.5em;
           font-weight: 900;
           cursor: pointer;
           position: sticky;
           top: 5%;
           margin-left: 100%;
         }
-        
-        .modalTitle{
-        color: #283618;
-        font-size: 2.2em;
-        font-family: DM Sans;
-        font-weight: 600;
-        margin-bottom: 1em;
-      }
-      
-      .modalDescription{
-        font-family: DM Sans;
-        font-weight: 600;
-        margin-bottom: 2em;
-        font-size: 1.2em;
-      }
-      
-      .experienceWrapper{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2em;
-        
-        img{
-          width: 200px;
+
+        .modalTitle {
+          color: #283618;
+          font-size: 2.2em;
+          font-family: DM Sans;
+          font-weight: 600;
           margin-bottom: 1em;
         }
-        
-        .experienceTitle{
-        font-size: 2em;
-        font-family: DM Sans;
-        font-weight: 600;
-        margin-bottom: 1em;
-        color: #606c38;
-      }
-      
-      .experienceDescription{
-        font-size: 1em;
-        
-        strong{
+
+        .modalDescription {
+          font-family: DM Sans;
           font-weight: 600;
+          margin-bottom: 2em;
+          font-size: 1.2em;
+        }
+
+        .experienceWrapper {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2em;
+
+          img {
+            width: 200px;
+            margin-bottom: 1em;
+          }
+
+          .experienceTitle {
+            font-size: 2em;
+            font-family: DM Sans;
+            font-weight: 600;
+            margin-bottom: 1em;
+            color: #606c38;
+          }
+
+          .experienceDescription {
+            font-size: 1em;
+
+            strong {
+              font-weight: 600;
+            }
+          }
+        }
+
+        p:last-child {
+          margin-bottom: 2em;
         }
       }
-      }
-      p:last-child{
-        margin-bottom: 2em;
-      }
-      }
-      
+
 
     }
-    
+
     .modalOverlay::-webkit-scrollbar {
       width: 10px;
     }
-    
+
     .modalOverlay::-webkit-scrollbar-track {
       background-color: #fefae0;
     }
-    
+
     .modalOverlay::-webkit-scrollbar-thumb {
       box-shadow: inset 0 0 6px #fefae0;
       background: #289000;
@@ -170,41 +174,45 @@
       height: fit-content;
       margin-bottom: 1.8em;
       align-items: flex-start;
+
       .name {
-      color: #606c38;
-      font-size: 7em;
-      font-weight: 700;
-      font-family: "Roboto", sans-serif;
-      position: relative;
-      z-index: 1; /* Adicionei esta linha */
-    }
+        color: #606c38;
+        font-size: 7em;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        position: relative;
+        z-index: 1;
+        /* Adicionei esta linha */
+      }
 
-    .name::before {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      inset: 0 0 0 0;
-      background: #fefae0;
-      z-index: -1;
-      transform: scaleX(0);
-      transform-origin: bottom right;
-      transition: transform 0.3s ease;
-    }
+      .name::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        inset: 0 0 0 0;
+        background: #fefae0;
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+      }
 
-    .name:hover::before {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
+      .name:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
       .descriptionSmall {
         font-size: 4em;
         color: white;
         font-family: "DM Sans";
       }
     }
+
     .resume {
       display: flex;
       flex-direction: column;
@@ -212,11 +220,14 @@
       border-radius: 20px;
       font-size: 1.2rem;
       font-family: DM Mono, monospace;
+
       .resumeDescription {
         width: 50%;
+
         hr {
           border-color: #606c38;
         }
+
         p {
           color: #dda15e;
           overflow-wrap: break-word;
@@ -224,53 +235,64 @@
           font-size: 1.4em;
           font-weight: 400;
         }
+
         p:last-child {
           text-align: center;
         }
       }
     }
+
     .badgesWrapper {
       // background-color: white;
       width: 100%;
       display: flex;
       max-height: 20%;
       padding-top: 6em;
+
       .badgeItem {
         display: flex;
         align-items: center;
         margin-right: 1.4em;
+
         .badgeIco {
           width: auto;
           height: 40px;
         }
+
         p {
           padding-left: 1em;
           font-size: 1.2em;
           color: #fefae0;
         }
+
         .experienceModal {
-        // Defina as propriedades iniciais
-        cursor: pointer;
-        transform: translateY(0);
-      
-        // Defina a animação
-        animation: bouncing 1s infinite;
-      }
-      
-      // Defina os keyframes para a animação de bouncing
-      @keyframes bouncing {
-        0%, 20%, 50%, 80%, 100% {
+          // Defina as propriedades iniciais
+          cursor: pointer;
           transform: translateY(0);
+
+          // Defina a animação
+          animation: bouncing 1s infinite;
         }
-      
-        40% {
-          transform: translateY(-10px);
+
+        // Defina os keyframes para a animação de bouncing
+        @keyframes bouncing {
+
+          0%,
+          20%,
+          50%,
+          80%,
+          100% {
+            transform: translateY(0);
+          }
+
+          40% {
+            transform: translateY(-10px);
+          }
+
+          60% {
+            transform: translateY(-5px);
+          }
         }
-      
-        60% {
-          transform: translateY(-5px);
-        }
-      }
       }
     }
 
@@ -286,6 +308,7 @@
         height: 100%;
         display: flex;
         justify-content: center;
+
         img {
           border-radius: 50%;
           width: 100%;
@@ -310,31 +333,37 @@
       width: 100%;
       height: fit-content;
       padding-top: 10em;
+
       // background-color: #070b34;
       .titleSection {
         display: flex;
         flex-direction: row;
         margin-bottom: 1.4em;
+
         h1 {
           color: #fefae0;
           font-size: 5em;
           font-family: DM Sans;
         }
       }
+
       .projectItem {
         width: 100%;
         height: 45vh;
         padding-top: 1em;
         display: flex;
         margin-bottom: 2rem;
+
         .sectionLeft {
           width: 50%;
           height: 100%;
+
           p {
             color: #dda15e;
             font-family: DM Sans;
             font-size: 2.5em;
           }
+
           .projectLinks {
             width: 100%;
             height: 20%;
@@ -342,15 +371,18 @@
             align-items: center;
             font-size: 0.45em;
             padding-top: 1em;
+
             .linkItem {
               display: flex;
               align-items: center;
               margin-right: 5em;
+
               img {
                 width: auto;
                 height: 30px;
                 margin-right: 1em;
               }
+
               a {
                 text-decoration: none;
                 color: white;
@@ -362,6 +394,7 @@
             }
           }
         }
+
         .sectionRight {
           width: 50%;
           height: 100%;
@@ -376,29 +409,35 @@
             border-radius: 15px;
           }
         }
+
         .projectDescription {
           width: 80%;
           display: flex;
           flex-direction: column;
+
           p {
             font-size: 1.4em;
             color: #fefae0;
             font-family: DM Sans;
           }
+
           .projectBadges {
             width: 100%;
             height: 5vh;
             display: flex;
+
             .badgeItem {
               display: flex;
               align-items: center;
               padding-top: 2.6em;
               margin-right: 1.6em;
+
               img {
                 width: 30px;
                 height: 30px;
                 margin-right: 0.6em;
               }
+
               p {
                 font-size: 1.2em;
               }
@@ -407,13 +446,73 @@
         }
       }
     }
+
     h1 {
       color: white;
     }
+
     .slideWrapper {
       width: 100%;
       height: 20vh;
       background-color: #606c38;
     }
   }
+}
+
+@media (max-width: 576px) {
+  .mainWrapper {
+    overflow-x: hidden;
+    padding: 2rem 1rem;
+
+    .home {
+
+      .description {
+        .name {
+          font-size: 5em;
+        }
+        .name:first-child {
+          font-size: 3em;
+          color: white;
+        }
+      }
+      .badgesWrapper{
+        .badgeItem{
+          margin-right: 0em;
+        }
+        .badgeItem:last-child{
+          margin-left: 1em;
+        }
+      }
+
+      .aboutWrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3em;
+        
+        .aboutDescription{
+          p{
+            text-align: center;
+            line-height: 1.1em;
+          }
+        }
+        
+        .profileSection{
+          img{
+            width: 200px;
+          }
+        }
+        .aboutDescription{
+          max-height: none;
+        }
+      }
+    }
+
+
+  }
+
+
+
+
+
 }
