@@ -492,7 +492,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 3em;
+        height: auto;
+        margin-top: 2em;
         
         .aboutDescription{
           p{
@@ -509,6 +510,11 @@
         .aboutDescription{
           max-height: none;
         }
+      }
+      .projectsWrapper{
+        padding-top: 0;
+        height: fit-content;
+        
       }
     }
 
