@@ -32,7 +32,7 @@ export default function Home() {
         <div className={styles.home}>
           <div className={styles.description}>
           {shouldRenderComponent && (
-            <a className={styles.name}>Oi. sou o</a>
+            <a className={styles.name}>Oi. sou</a>
           )}
             <a className={styles.name}>Daniel Kondlatsch</a>
             <a className={styles.descriptionSmall}>Front-End Developer</a>

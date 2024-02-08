@@ -470,107 +470,164 @@
         .name {
           font-size: 5em;
         }
+
         .name:first-child {
           font-size: 3em;
           color: white;
         }
       }
-      .badgesWrapper{
-        .badgeItem{
+
+      .badgesWrapper {
+        .badgeItem {
           margin-right: 0em;
         }
-        .badgeItem:last-child{
+
+        .badgeItem:last-child {
           margin-left: 1em;
         }
       }
-      
-      .modalOverlay{
+
+      .modalOverlay {
         width: 85%;
       }
 
-      .aboutWrapper{
+      .aboutWrapper {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
         margin-top: 2em;
-        
-        .aboutDescription{
-          p{
+
+        .aboutDescription {
+          p {
             text-align: center;
             line-height: 1.1em;
           }
         }
-        
-        .profileSection{
-          img{
+
+        .profileSection {
+          img {
             width: 200px;
           }
         }
-        .aboutDescription{
+
+        .aboutDescription {
           max-height: none;
         }
       }
-      .projectsWrapper{
+
+      .projectsWrapper {
         padding-top: 1.4em;
         height: fit-content;
-        
-        .titleSection{
+
+        .titleSection {
           justify-content: center;
         }
-        
-        .projectItem{
+
+        .projectItem {
           flex-direction: column;
           height: fit-content;
           align-items: center;
-          
-          .projectDescription{
+
+          .projectDescription {
             padding-top: 2em;
-            
-            .projectBadges{
+
+            .projectBadges {
               justify-content: space-around;
-              .badgeItem{
+
+              .badgeItem {
                 margin-right: 0;
               }
             }
           }
-          
-          .sectionLeft{
+
+          .sectionLeft {
             display: flex;
             flex-direction: column;
             width: 100%;
             align-items: center;
             margin-bottom: 2em;
             
-            .projectLinks{
+            p{
+              text-align: center;
+            }
+
+            .projectLinks {
               justify-content: space-around;
-              
-              .linkItem{
+
+              .linkItem {
                 margin-right: 0;
               }
             }
           }
-          
-          .sectionRight{
+
+          .sectionRight {
             width: 100%;
             padding: 0;
             border: none;
             background: none;
-            img{
+
+            img {
               width: 100%;
               max-height: 307px;
             }
           }
         }
-        
+
       }
     }
 
 
   }
+}
 
+@media (max-width: 375px) {
 
+  .mainWrapper {
+    overflow-x: hidden;
+    padding: 2rem 1rem;
 
-
+    .home {
+      .description {
+        .name {
+          font-size: 3.6em;
+        }
+        .name:first-child {
+          font-size: 2.5em;
+          color: white;
+        }
+        
+        .descriptionSmall{
+          font-size: 3em;
+        }
+      }
+      .resume{
+        .resumeDescription {
+          width: 70%;
+        }
+      }
+      .badgesWrapper{
+        .badgeItem{
+          p{
+            font-size: 1em;
+          }
+        }
+      }
+      .aboutWrapper{
+        .aboutDescription{
+          width: 95%;
+        }
+      }
+      .projectsWrapper{
+        .projectItem{
+          .sectionLeft{
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
 
 }
