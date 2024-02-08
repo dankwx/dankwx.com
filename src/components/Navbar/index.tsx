@@ -1,7 +1,7 @@
-import styles from "./Navbar.module.scss";
 import linkedinIco from "../../assets/linkedinIco.png";
 import githubIco from "../../assets/github.png";
 import React from "react";
+import styles from "./Navbar.module.scss";
 
 export default function Navbar() {
   return (
