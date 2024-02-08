@@ -201,10 +201,10 @@
         transition: transform 0.3s ease;
       }
 
-      .name:hover::before {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-      }
+      .name.animate::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
 
       .descriptionSmall {
         font-size: 4em;

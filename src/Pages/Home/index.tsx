@@ -10,6 +10,7 @@ import minePrint from "../../assets/print.png";
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
 import {useState} from 'react';
+import {useEffect} from 'react';
 import React from "react";
 import styles from "./Home.module.scss";
 
@@ -25,6 +26,30 @@ export default function Home() {
 }
   const shouldRenderComponent = isScreenSmall();
   
+  
+  //
+  
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setAnimate(true);
+
+      // Após 1 segundo, reverta a animação
+      const revertTimeoutId = setTimeout(() => {
+        setAnimate(false);
+      }, 800);
+
+      return () => {
+        clearTimeout(revertTimeoutId);
+      };
+    }, 5000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+  
   return (
     <div className={styles.mainWrapper}>
       <PasswordProtection correctPassword={"danielzika@12"}>
@@ -34,7 +59,9 @@ export default function Home() {
           {shouldRenderComponent && (
             <a className={styles.name}>Oi. sou</a>
           )}
-            <a className={styles.name}>Daniel Kondlatsch</a>
+            <a className={`${styles.name} ${animate ? styles.animate : ''}`}>
+      Daniel Kondlatsch
+    </a>
             <a className={styles.descriptionSmall}>Front-End Developer</a>
             {/* {/* <a>Web</a> */}
           </div>
