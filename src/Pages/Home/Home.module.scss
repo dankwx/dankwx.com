@@ -156,7 +156,7 @@
     }
 
     .modalOverlay::-webkit-scrollbar {
-      width: 10px;
+      width: 0px;
     }
 
     .modalOverlay::-webkit-scrollbar-track {
@@ -164,8 +164,8 @@
     }
 
     .modalOverlay::-webkit-scrollbar-thumb {
-      box-shadow: inset 0 0 6px #fefae0;
-      background: #289000;
+      box-shadow: inset 0 1px 1px #fefae0;
+      background: black;
     }
 
     .description {
