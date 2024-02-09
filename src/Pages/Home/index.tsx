@@ -176,6 +176,7 @@ export default function Home() {
                 <img src={minePrint} alt="" />
               </div>
             </div>
+            <hr />
             <div className={styles.projectItem}>
               <div className={styles.sectionLeft}>
                 <p>CopiaCola</p>
@@ -212,10 +213,6 @@ export default function Home() {
                       <img src={reactICo} alt="" />
                       <p>React.js</p>
                     </div>
-                    <div className={styles.badgeItem}>
-                      <img src={luaIco} alt="" />
-                      <p>Lua</p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -223,6 +220,7 @@ export default function Home() {
                 <img src="https://picsum.photos/1000/1200" alt="" />
               </div>
             </div>
+            <hr />
             <div className={styles.projectItem}>
               <div className={styles.sectionLeft}>
                 <p>Diário</p>
