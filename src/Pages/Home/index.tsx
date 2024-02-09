@@ -70,7 +70,7 @@ export default function Home() {
             <div className={styles.experienceWrapper}>
             <img
                 src="https://funlec.com.br/wp-content/uploads/2023/09/Logo_Poliedro_Horiz_SIST_ENSINO.png"
-                alt=""
+                alt="" loading="lazy"
               />
             <p className={styles.experienceTitle}>Shadow na equipe da Poliedro</p>
             
@@ -86,7 +86,7 @@ export default function Home() {
             <div className={styles.experienceWrapper}>
             <img
                 src="https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo-1.png"
-                alt=""
+                alt="" loading="lazy"
               />
             <p className={styles.experienceTitle}>Front-end Developer na equipe da Sicredi</p>
             
@@ -173,7 +173,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.sectionRight}>
-                <img src={minePrint} alt="" />
+                <img src={minePrint} alt="" loading="lazy"/>
               </div>
             </div>
             <hr />
@@ -217,7 +217,7 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.sectionRight}>
-                <img src="https://picsum.photos/1000/1200" alt="" />
+                <img src="https://picsum.photos/1000/1200" alt="" loading="lazy"/>
               </div>
             </div>
             <hr />
@@ -257,15 +257,11 @@ export default function Home() {
                       <img src={reactICo} alt="" />
                       <p>React.js</p>
                     </div>
-                    <div className={styles.badgeItem}>
-                      <img src={luaIco} alt="" />
-                      <p>Lua</p>
-                    </div>
                   </div>
                 </div>
               </div>
               <div className={styles.sectionRight}>
-                <img src="https://picsum.photos/1000/1300" alt="" />
+                <img src="https://picsum.photos/1000/1300" alt="" loading="lazy"/>
               </div>
             </div>
           </div>
