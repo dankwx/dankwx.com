@@ -92,7 +92,6 @@
           margin-top: 2em;
         }
 
-
         .closeButton {
           color: black;
           font-size: 1.5em;
@@ -151,8 +150,6 @@
           margin-bottom: 2em;
         }
       }
-
-
     }
 
     .modalOverlay::-webkit-scrollbar {
@@ -276,7 +273,6 @@
 
         // Defina os keyframes para a animação de bouncing
         @keyframes bouncing {
-
           0%,
           20%,
           50%,
@@ -445,8 +441,8 @@
           }
         }
       }
-      
-      hr{
+
+      hr {
         border-color: #606c38;
       }
     }
@@ -469,7 +465,6 @@
     padding: 2rem 1rem;
 
     .home {
-
       .description {
         .name {
           font-size: 5em;
@@ -552,8 +547,8 @@
             width: 100%;
             align-items: center;
             margin-bottom: 2em;
-            
-            p{
+
+            p {
               text-align: center;
             }
 
@@ -578,16 +573,12 @@
             }
           }
         }
-
       }
     }
-
-
   }
 }
 
 @media (max-width: 425px) {
-
   .mainWrapper {
     overflow-x: hidden;
     padding: 2rem 1rem;
@@ -596,37 +587,37 @@
       .description {
         .name {
           font-size: 3.6em;
-          color: $terciary-color
+          color: $terciary-color;
         }
         .name:first-child {
           font-size: 2.5em;
           color: white;
         }
-        
-        .descriptionSmall{
+
+        .descriptionSmall {
           font-size: 3em;
         }
       }
-      .resume{
+      .resume {
         .resumeDescription {
           width: 70%;
         }
       }
-      .badgesWrapper{
-        .badgeItem{
-          p{
+      .badgesWrapper {
+        .badgeItem {
+          p {
             font-size: 1em;
           }
         }
       }
-      .aboutWrapper{
-        .aboutDescription{
+      .aboutWrapper {
+        .aboutDescription {
           width: 95%;
         }
       }
-      .projectsWrapper{
-        .projectItem{
-          .sectionLeft{
+      .projectsWrapper {
+        .projectItem {
+          .sectionLeft {
             p {
               text-align: center;
             }
@@ -635,5 +626,4 @@
       }
     }
   }
-
 }
