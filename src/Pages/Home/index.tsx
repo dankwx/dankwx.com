@@ -203,7 +203,7 @@ export default function Home() {
                 <div className={styles.linkItem}>
                   <img src={githubIcon} alt="" />
                   <a
-                    href="https://github.com/dankwx/minecraft-irl-interaction"
+                    href="https://github.com/dankwx/copyPasteSite"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -213,7 +213,7 @@ export default function Home() {
                 <div className={styles.linkItem}>
                   <img src={websiteIco} alt="" />
                   <a
-                    href="https://www.google.com.br/"
+                    href="https://danlu-copy-paste.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
