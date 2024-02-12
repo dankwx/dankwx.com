@@ -6,6 +6,7 @@ import efficiencyIco from "../../assets/efficiency.png";
 import githubIcon from "../../assets/github-white.png";
 import websiteIco from "../../assets/website-white.png";
 import minePrint from "../../assets/print.png";
+import copiaColaPrint from "../../assets/copiaCola1.png"
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
 import { useState } from "react";
@@ -237,11 +238,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.sectionRight}>
-              <img
-                src="https://picsum.photos/1000/1200"
-                alt=""
-                loading="lazy"
-              />
+            <img src={copiaColaPrint} alt="" loading="lazy" />
             </div>
           </div>
           <hr />
