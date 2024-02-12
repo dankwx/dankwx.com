@@ -6,7 +6,7 @@ import efficiencyIco from "../../assets/efficiency.png";
 import githubIcon from "../../assets/github-white.png";
 import websiteIco from "../../assets/website-white.png";
 import minePrint from "../../assets/print.png";
-import copiaColaPrint from "../../assets/copiaCola1.png"
+import copiaColaPrint from "../../assets/copiaCola1.png";
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
 import { useState } from "react";
@@ -75,7 +75,6 @@ export default function Home() {
                   <img
                     src="https://funlec.com.br/wp-content/uploads/2023/09/Logo_Poliedro_Horiz_SIST_ENSINO.png"
                     alt=""
-                    loading="lazy"
                   />
                   <p className={styles.experienceTitle}>
                     Shadow na equipe da Poliedro
@@ -100,7 +99,6 @@ export default function Home() {
                   <img
                     src="https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo-1.png"
                     alt=""
-                    loading="lazy"
                   />
                   <p className={styles.experienceTitle}>
                     Front-end Developer na equipe da Sicredi
@@ -194,7 +192,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.sectionRight}>
-              <img src={minePrint} alt="" loading="lazy" />
+              <img src={minePrint} alt="" />
             </div>
           </div>
           <hr />
@@ -238,7 +236,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.sectionRight}>
-            <img src={copiaColaPrint} alt="" loading="lazy" />
+              <img src={copiaColaPrint} alt="" />
             </div>
           </div>
           <hr />
@@ -282,11 +280,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.sectionRight}>
-              <img
-                src="https://picsum.photos/1000/1300"
-                alt=""
-                loading="lazy"
-              />
+              <img src="https://picsum.photos/1000/1300" alt="" />
             </div>
           </div>
         </div>
