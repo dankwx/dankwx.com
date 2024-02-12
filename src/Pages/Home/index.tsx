@@ -31,9 +31,9 @@ export default function Home() {
       <Navbar />
       <div className={styles.home}>
         <div className={styles.description}>
-          {shouldRenderComponent && <a className={styles.name}>Oi. sou</a>}
-          <a className={styles.name}>Daniel Kondlatsch</a>
-          <a className={styles.descriptionSmall}>Front-End Developer</a>
+          {shouldRenderComponent && <p className={styles.name}>Oi. sou</p>}
+          <p className={styles.name}>Daniel Kondlatsch</p>
+          <p className={styles.descriptionSmall}>Front-End Developer</p>
           {/* {/* <a>Web</a> */}
         </div>
         <div className={styles.resume}>
