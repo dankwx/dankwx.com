@@ -224,7 +224,7 @@
         }
 
         p {
-          color: #dda15e;
+          color: $secondary-color;
           overflow-wrap: break-word;
           font-family: DM Sans;
           font-size: 1.4em;
@@ -257,7 +257,7 @@
         p {
           padding-left: 1em;
           font-size: 1.2em;
-          color: #fefae0;
+          color: $five-color;
         }
 
         .experienceModal {
@@ -317,7 +317,7 @@
         padding: 1em 3em;
 
         p {
-          color: white;
+          color: $five-color;
           font-family: DM Sans;
           font-size: 1.4em;
         }
@@ -336,7 +336,7 @@
         margin-bottom: 1.4em;
 
         h1 {
-          color: #fefae0;
+          color: $five-color;
           font-size: 5em;
           font-family: DM Sans;
         }
@@ -354,7 +354,7 @@
           height: 100%;
 
           p {
-            color: #dda15e;
+            color: $secondary-color;
             font-family: DM Sans;
             font-size: 2.5em;
           }
@@ -380,7 +380,7 @@
 
               a {
                 text-decoration: none;
-                color: white;
+                color: $white;
                 text-decoration: underline;
                 text-decoration-thickness: 1px;
                 text-underline-offset: 4px;
@@ -412,7 +412,7 @@
 
           p {
             font-size: 1.4em;
-            color: #fefae0;
+            color: $five-color;
             font-family: DM Sans;
           }
 
@@ -435,6 +435,7 @@
 
               p {
                 font-size: 1.2em;
+                color: $white;
               }
             }
           }
