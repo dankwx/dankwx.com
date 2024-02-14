@@ -275,7 +275,7 @@ export default function Home() {
                 <div className={styles.linkItem}>
                   <img src={websiteIco} alt="" />
                   <a
-                    href="https://www.google.com.br/"
+                    href="https://sitezin-sooty.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
