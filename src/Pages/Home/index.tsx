@@ -9,7 +9,7 @@ import minePrint from "../../assets/print.png";
 import copiaColaPrint from "../../assets/copiaCola1.png";
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import styles from "./Home.module.scss";
 
@@ -25,6 +25,23 @@ export default function Home() {
   const shouldRenderComponent = isScreenSmall();
 
   //
+  
+  // Função para pré-carregar as imagens do modal
+  const preloadImages = () => {
+    const imageUrls = [
+      'https://funlec.com.br/wp-content/uploads/2023/09/Logo_Poliedro_Horiz_SIST_ENSINO.png',
+      'https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo-1.png',
+    ];
+
+    imageUrls.forEach((url) => {
+      const img = new Image();
+      img.src = url;
+    });
+  };
+
+  useEffect(() => {
+    preloadImages();
+  }, []);
 
   return (
     <div className={styles.mainWrapper}>
