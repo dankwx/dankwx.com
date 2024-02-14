@@ -7,6 +7,7 @@ import githubIcon from "../../assets/github-white.png";
 import websiteIco from "../../assets/website-white.png";
 import minePrint from "../../assets/print.png";
 import copiaColaPrint from "../../assets/copiaCola1.png";
+import diarioPrint from "../../assets/diarioPrint.png";
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
 import { useState, useEffect } from "react";
@@ -264,7 +265,7 @@ export default function Home() {
                 <div className={styles.linkItem}>
                   <img src={githubIcon} alt="" />
                   <a
-                    href="https://github.com/dankwx/minecraft-irl-interaction"
+                    href="https://github.com/dankwx/sitezin"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -297,7 +298,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.sectionRight}>
-              <img src="https://picsum.photos/1000/1300" alt="" />
+              <img src={diarioPrint} alt="" />
             </div>
           </div>
         </div>
