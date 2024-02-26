@@ -1,12 +1,13 @@
 import "../../assets/styles/reset.css"; // reset css
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import profileImg from "./profile.jpg";
 import experienceIco from "../../assets/experience.png";
 import efficiencyIco from "../../assets/efficiency.png";
 import githubIcon from "../../assets/github-white.png";
 import websiteIco from "../../assets/website-white.png";
 import minePrint from "../../assets/print.png";
-import copiaColaPrint from "../../assets/copiaCola1.png";
+import copypasteSite from "./danlucopypaste.png";
 import diarioPrint from "../../assets/diarioPrint.png";
 import reactICo from "../../assets/react.png";
 import luaIco from "../../assets/lua.png";
@@ -146,7 +147,7 @@ export default function Home() {
         <div className={styles.aboutWrapper}>
           <div className={styles.profileSection}>
             <img
-              src="https://i.pinimg.com/564x/b7/b3/c4/b7b3c4d875429de1696f17a32b5eb253.jpg"
+              src={profileImg}
               alt=""
             />
           </div>
@@ -254,7 +255,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.sectionRight}>
-              <img src={copiaColaPrint} alt="" />
+              <img src={copypasteSite} alt="" />
             </div>
           </div>
           <hr />
