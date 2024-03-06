@@ -167,7 +167,7 @@ export default function Home() {
         </div>
         <div className={styles.projectsWrapper}>
           <div className={styles.titleSection}>
-            <h1>Projetos</h1>
+            <h1>Alguns dos meus Projetos</h1>
           </div>
           <div className={styles.projectItem}>
             <div className={styles.sectionLeft}>
