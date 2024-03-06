@@ -1,12 +1,14 @@
 import "../../assets/styles/reset.css"; // reset css
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import profileImg from "./profile.jpg";
+import profileImg from "./profile3.jpg";
 import experienceIco from "../../assets/experience.png";
 import efficiencyIco from "../../assets/efficiency.png";
 import githubIcon from "../../assets/github-white.png";
 import websiteIco from "../../assets/website-white.png";
+import nextjsIco from "../../assets/nextjs-icon.png"
 import minePrint from "../../assets/print.png";
+import pettresPrint from "../../assets/pettres.png"
 import copypasteSite from "./danlucopypaste.png";
 import diarioPrint from "../../assets/diarioPrint.png";
 import reactICo from "../../assets/react.png";
@@ -27,7 +29,7 @@ export default function Home() {
   const shouldRenderComponent = isScreenSmall();
 
   //
-  
+
   // Função para pré-carregar as imagens do modal
   const preloadImages = () => {
     const imageUrls = [
@@ -181,16 +183,6 @@ export default function Home() {
                     GitHub
                   </a>
                 </div>
-                <div className={styles.linkItem}>
-                  <img src={websiteIco} alt="" />
-                  <a
-                    href="https://www.google.com.br/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Website
-                  </a>
-                </div>
               </div>
               <div className={styles.projectDescription}>
                 <p>
@@ -212,6 +204,56 @@ export default function Home() {
             </div>
             <div className={styles.sectionRight}>
               <img src={minePrint} alt="" />
+            </div>
+          </div>
+          <div className={styles.projectItem}>
+            <div className={styles.sectionLeft}>
+              <p>Sistema de Controle de Vendas</p>
+              <div className={styles.projectLinks}>
+                <div className={styles.linkItem}>
+                  <img src={githubIcon} alt="" />
+                  <a
+                    href="https://github.com/dankwx/sales-system-pettres"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+                <div className={styles.linkItem}>
+                  <img src={websiteIco} alt="" />
+                  <a
+                    href="https://sales-system-pettres.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Website
+                  </a>
+                </div>
+              </div>
+              <div className={styles.projectDescription}>
+                <p>
+                  Este é um projeto feito para uma necessidade real, para a empresa de Tornearia do meu pai,
+                  que fazia o registro de vendas e recibos através de notas físicas, e com este projeto,
+                  supri totalmente a necessidade de papéis, permitindo o controle eficiente de registro
+                  de vendas.
+                  Providenciei o link para o repositório do projeto, mas criei um novo repositório privado em que dei o deploy para meu
+                  pai utilizar. O Projeto é totalmente seguro com acesso restrito e com middleware robusto.
+                </p>
+                <div className={styles.projectBadges}>
+                  <div className={styles.badgeItem}>
+                    <img src={reactICo} alt="" />
+                    <p>React.js</p>
+                  </div>
+                  <div className={styles.badgeItem}>
+                    <img src={nextjsIco} alt="" />
+                    <p>Next.js</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.sectionRight}>
+              <img src={pettresPrint} alt="" />
             </div>
           </div>
           <hr />
