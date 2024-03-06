@@ -305,7 +305,7 @@
         justify-content: center;
 
         img {
-          border-radius: 50%;
+          border-radius: 180px;
           width: 100%;
           object-fit: cover;
 
@@ -322,6 +322,7 @@
           color: $five-color;
           font-family: DM Sans;
           font-size: 1.4em;
+          line-height: 2rem;
         }
       }
     }
@@ -419,6 +420,7 @@
             font-size: 1.4em;
             color: $five-color;
             font-family: DM Sans;
+            line-height: 2rem;
           }
 
           .projectBadges {

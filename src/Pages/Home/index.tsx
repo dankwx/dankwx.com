@@ -206,6 +206,7 @@ export default function Home() {
               <img src={minePrint} alt="" />
             </div>
           </div>
+          <hr />
           <div className={styles.projectItem}>
             <div className={styles.sectionLeft}>
               <p>Sistema de Controle de Vendas</p>
