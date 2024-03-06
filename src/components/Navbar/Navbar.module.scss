@@ -14,6 +14,9 @@
     font-size: 2rem;
   }
   .navLinks {
+    img {
+      margin-right: 0.6rem;
+    }
     list-style: none;
     display: flex;
     font-size: 1.3rem;
@@ -25,42 +28,49 @@
       align-items: center;
       cursor: pointer;
       transition: color 0.3s ease;
+      margin-right: 1rem;
 
       &:hover {
         color: #c2b7b7;
       }
       svg {
-
-        margin-right: .4em;
+        margin-right: 0.4em;
       }
       a {
         color: inherit; // Para herdar a cor do texto do elemento pai
         text-decoration: none; // Para remover a decoração do link
       }
     }
-    li:first-child{
+    li:first-child {
       margin-right: 1rem;
     }
   }
 }
 
 @media (max-width: 576px) {
-    .navbarWrapper {
-  box-sizing: border-box;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  .logo{
-    display: none;
-  }
-  img{
-    display: none;
-  }
-  li{
+  .navbarWrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    display: flex;
     align-items: center;
-  }
+    justify-content: center;
+
+    .logo {
+      display: none;
+    }
+    .navLinks {
+      flex-direction: column;
+    }
+    .siteIcon {
+      display: none;
+    }
+    li {
+      align-items: center;
+      margin-bottom: 0.6em;
+    }
+    li:last-child{
+      margin-bottom: 0em;
+    }
   }
 }
