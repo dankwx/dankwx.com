@@ -11,7 +11,7 @@ export default function Navbar() {
       <img className={styles.siteIcon} src={pageIco} alt="" width={40} />
       <ul className={styles.navLinks}>
         <li>
-          <a href="https:/blog.dankwx.com/" target="_blank">
+          <a href="https://blog.dankwx.com/" target="_blank">
             <img src={blogIco} width={20} height={20} alt="" />
             Blog
           </a>
