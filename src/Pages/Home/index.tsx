@@ -6,9 +6,9 @@ import experienceIco from "../../assets/experience.png";
 import efficiencyIco from "../../assets/efficiency.png";
 import githubIcon from "../../assets/github-white.png";
 import websiteIco from "../../assets/website-white.png";
-import nextjsIco from "../../assets/nextjs-icon.png"
+import nextjsIco from "../../assets/nextjs-icon.png";
 import minePrint from "../../assets/print.png";
-import pettresPrint from "../../assets/pettres.png"
+import pettresPrint from "../../assets/pettres.png";
 import copypasteSite from "./danlucopypaste.png";
 import diarioPrint from "../../assets/diarioPrint.png";
 import reactICo from "../../assets/react.png";
@@ -19,9 +19,12 @@ import styles from "./Home.module.scss";
 
 export default function Home() {
   const [isModalOpen, setModalOpen] = useState(false);
+  const [isMyProjectsModalOpen, setMyProjectsModalOpen] = useState(false);
 
   const handleModalOpen = () => setModalOpen(true);
   const handleModalClose = () => setModalOpen(false);
+  const handleProjectsModalOpen = () => setMyProjectsModalOpen(true);
+  const handleProjectsModalClose = () => setMyProjectsModalOpen(false);
 
   function isScreenSmall() {
     return window.innerWidth <= 576;
@@ -33,8 +36,8 @@ export default function Home() {
   // Função para pré-carregar as imagens do modal
   const preloadImages = () => {
     const imageUrls = [
-      'https://funlec.com.br/wp-content/uploads/2023/09/Logo_Poliedro_Horiz_SIST_ENSINO.png',
-      'https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo-1.png',
+      "https://funlec.com.br/wp-content/uploads/2023/09/Logo_Poliedro_Horiz_SIST_ENSINO.png",
+      "https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo-1.png",
     ];
 
     imageUrls.forEach((url) => {
@@ -141,17 +144,56 @@ export default function Home() {
               </div>
             </div>
           )}
-          <div className={styles.badgeItem}>
+          {/* Renderize o Modal com as informações desejadas */}
+          {isMyProjectsModalOpen && (
+            <div
+              className={styles.projectsModalOverlay}
+              onClick={handleProjectsModalClose}
+            >
+              <div
+                className={styles.modalContent}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <span
+                  className={styles.closeButton}
+                  onClick={handleProjectsModalClose}
+                >
+                  {/* botao de fechar  &times; */}&times;
+                </span>
+                <p className={styles.modalTitle}>
+                  Projetos Pessoais De Autoria
+                </p>
+                <p className={styles.modalDescription}>
+                  Todos meu projetos que você ver aqui e no meu GitHub, nenhum
+                  deles é proveniente de algum template pronto ou algo de algum
+                  curso da internet.
+                  <br />
+                  <br />
+                  Todos eles foram feito para alguma resolução de problema,
+                  utilidade ou hobby, todo design feito por conta própria.
+                  <br />
+                  <br />
+                  Não digo que cópia de projetos não agreguem, mas acredito que
+                  possuir seus própios projetos além de ser feito com o inuito
+                  de criar sobre algo que você gosta, ajuda a fixar muito melhor
+                  a experiência adquirida e permite associações melhores no
+                  nosso cérebro. Sinta se livre para dar uma olhada em todos
+                  meus projetos!
+                </p>
+                <hr />
+
+                <p>👀</p>
+              </div>
+            </div>
+          )}
+          <div className={styles.badgeItem} onClick={handleProjectsModalOpen}>
             <img className={styles.badgeIco} src={efficiencyIco} alt="" />
             <p>Projetos Pessoais com Casos Reais</p>
           </div>
         </div>
         <div className={styles.aboutWrapper}>
           <div className={styles.profileSection}>
-            <img
-              src={profileImg}
-              alt=""
-            />
+            <img src={profileImg} alt="" />
           </div>
           <div className={styles.aboutDescription}>
             <p>
@@ -234,12 +276,15 @@ export default function Home() {
               </div>
               <div className={styles.projectDescription}>
                 <p>
-                  Este é um projeto feito para uma necessidade real, para a empresa de Tornearia do meu pai,
-                  que fazia o registro de vendas e recibos através de notas físicas, e com este projeto,
-                  supri totalmente a necessidade de papéis, permitindo o controle eficiente de registro
-                  de vendas.
-                  Providenciei o link para o repositório do projeto, mas criei um novo repositório privado em que dei o deploy para meu
-                  pai utilizar. O Projeto é totalmente seguro com acesso restrito e com middleware robusto.
+                  Este é um projeto feito para uma necessidade real, para a
+                  empresa de Tornearia do meu pai, que fazia o registro de
+                  vendas e recibos através de notas físicas, e com este projeto,
+                  supri totalmente a necessidade de papéis, permitindo o
+                  controle eficiente de registro de vendas. Providenciei o link
+                  para o repositório do projeto, mas criei um novo repositório
+                  privado em que dei o deploy para meu pai utilizar. O Projeto é
+                  totalmente seguro com acesso restrito e com middleware
+                  robusto.
                 </p>
                 <div className={styles.projectBadges}>
                   <div className={styles.badgeItem}>
