@@ -164,7 +164,7 @@
       border-radius: 20px;
       border: 4px solid;
       border-color: #606c38;
-      height: fit-content;
+      height: 60%;
       width: 40%;
       overflow-y: scroll;
       overflow-x: hidden;
@@ -177,7 +177,6 @@
       padding-top: 1em;
       transform: translate(-50%, -50%);
       animation: fadeIn 0.1s ease-in-out;
-      overflow: hidden;
 
       @keyframes fadeIn {
         from {
