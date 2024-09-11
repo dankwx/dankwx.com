@@ -1,3 +1,3 @@
 ### dankwx.com
 
-portfolio for dankwx
+portfolio website for dankwx
