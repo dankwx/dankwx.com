@@ -1,0 +1,234 @@
+@import "../../assets/styles/variables";
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, $background 0%, rgba(59, 130, 246, 0.03) 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $space-6;
+    position: relative;
+    z-index: 1;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $space-16;
+    align-items: center;
+    min-height: 80vh;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: $space-12;
+      text-align: center;
+    }
+  }
+
+  .textContent {
+    .greeting {
+      color: $text-secondary;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: $space-2;
+      opacity: 0.8;
+    }
+
+    .name {
+      font-size: 3.5rem;
+      font-weight: 800;
+      background: $gradient-primary;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.1;
+      margin-bottom: $space-2;
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-secondary;
+      margin-bottom: $space-6;
+
+      @media (max-width: 768px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: $text-secondary;
+      margin-bottom: $space-8;
+      max-width: 500px;
+
+      @media (max-width: 768px) {
+        max-width: none;
+      }
+    }
+
+    .actions {
+      display: flex;
+      gap: $space-4;
+      flex-wrap: wrap;
+
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
+    }
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-2;
+    padding: $space-3 $space-6;
+    border: none;
+    border-radius: $radius-xl;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .btnPrimary {
+    background: $gradient-primary;
+    color: white;
+    box-shadow: $shadow-lg;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-xl;
+    }
+  }
+
+  .btnSecondary {
+    background: $surface;
+    color: $text-primary;
+    border: 2px solid $border;
+    box-shadow: $shadow-md;
+
+    &:hover {
+      background: $gray-50;
+      border-color: $primary;
+      color: $primary;
+      transform: translateY(-2px);
+    }
+  }
+
+  .imageContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      order: -1;
+    }
+  }
+
+  .imageWrapper {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: $shadow-xl;
+
+    @media (max-width: 768px) {
+      width: 280px;
+      height: 280px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    .imageBg {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background: $gradient-accent;
+      border-radius: 50%;
+      z-index: -1;
+      opacity: 0.2;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  .scrollIndicator {
+    position: absolute;
+    bottom: $space-8;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-2;
+    color: $text-muted;
+
+    .scrollIcon {
+      animation: bounce 2s infinite;
+    }
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(5px) rotate(-1deg);
+  }
+}

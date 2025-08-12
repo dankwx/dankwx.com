@@ -1,0 +1,277 @@
+@import "../../assets/styles/variables";
+
+.experience {
+  padding: $space-24 0;
+  background: $surface;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $space-6;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: $space-16;
+  }
+
+  .header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: $space-2;
+      background: rgba(59, 130, 246, 0.1);
+      color: $primary;
+      padding: $space-2 $space-4;
+      border-radius: $radius-xl;
+      font-weight: 500;
+      font-size: 0.875rem;
+      margin-bottom: $space-6;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $text-primary;
+      margin-bottom: $space-4;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: $text-secondary;
+      line-height: 1.6;
+    }
+  }
+
+  .experienceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: $space-8;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: $space-6;
+    }
+  }
+
+  .experienceCard {
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: $radius-2xl;
+    padding: $space-8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: $shadow-sm;
+
+    &:hover {
+      border-color: $primary;
+      box-shadow: $shadow-lg;
+    }
+
+    .cardHeader {
+      display: flex;
+      align-items: flex-start;
+      gap: $space-4;
+      margin-bottom: $space-6;
+
+      img {
+        width: 60px;
+        height: 40px;
+        object-fit: contain;
+        border-radius: $radius-md;
+      }
+
+      .cardInfo {
+        flex: 1;
+
+        h3 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: $text-primary;
+          margin-bottom: $space-1;
+        }
+
+        .company {
+          font-size: 1rem;
+          color: $text-secondary;
+          margin-bottom: $space-2;
+        }
+
+        .duration {
+          font-size: 0.875rem;
+          color: $primary;
+          background: rgba(59, 130, 246, 0.1);
+          padding: $space-1 $space-3;
+          border-radius: $radius-lg;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .cardDescription {
+      font-size: 0.95rem;
+      color: $text-secondary;
+      line-height: 1.6;
+      margin-bottom: $space-6;
+    }
+
+    .technologies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $space-2;
+
+      .tech {
+        background: $gray-100;
+        color: $text-primary;
+        padding: $space-1 $space-3;
+        border-radius: $radius-lg;
+        font-size: 0.8rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space-8;
+    margin-top: $space-8;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: $space-6;
+    }
+
+    .stat {
+      text-align: center;
+      padding: $space-6;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+      border-radius: $radius-2xl;
+      border: 1px solid rgba(59, 130, 246, 0.1);
+
+      .statNumber {
+        font-size: 2.5rem;
+        font-weight: 800;
+        background: $gradient-primary;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: $space-2;
+      }
+
+      .statLabel {
+        color: $text-secondary;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: $space-6;
+
+    .modalContent {
+      background: $surface;
+      border-radius: $radius-2xl;
+      padding: $space-8;
+      max-width: 500px;
+      width: 100%;
+      position: relative;
+      box-shadow: $shadow-xl;
+
+      .closeButton {
+        position: absolute;
+        top: $space-4;
+        right: $space-4;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $text-muted;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $radius-md;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: $gray-100;
+          color: $text-primary;
+        }
+      }
+
+      img {
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: $space-4;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $text-primary;
+        margin-bottom: $space-2;
+      }
+
+      .company {
+        font-size: 1.1rem;
+        color: $text-secondary;
+        margin-bottom: $space-2;
+      }
+
+      .duration {
+        display: inline-block;
+        background: rgba(59, 130, 246, 0.1);
+        color: $primary;
+        padding: $space-1 $space-3;
+        border-radius: $radius-lg;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-bottom: $space-6;
+      }
+
+      .description {
+        color: $text-secondary;
+        line-height: 1.6;
+        margin-bottom: $space-6;
+      }
+
+      .technologies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $space-2;
+
+        .tech {
+          background: $gray-100;
+          color: $text-primary;
+          padding: $space-2 $space-3;
+          border-radius: $radius-lg;
+          font-size: 0.875rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

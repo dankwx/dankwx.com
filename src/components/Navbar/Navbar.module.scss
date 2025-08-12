@@ -1,76 +1,148 @@
 @import "../../assets/styles/variables";
 
-.navbarWrapper {
-  box-sizing: border-box;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .logo {
-    font-family: DM Sans;
-    line-height: 0.8em;
-    color: $white;
-    font-size: 2rem;
-  }
-  .navLinks {
-    img {
-      margin-right: 0.6rem;
-    }
-    list-style: none;
-    display: flex;
-    font-size: 1.3rem;
-    color: white;
-    li {
-      margin-right: 0rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: color 0.3s ease;
-      margin-right: 1rem;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $border;
+  padding: $space-4 0;
+  transition: all 0.3s ease;
 
-      &:hover {
-        color: #c2b7b7;
-      }
-      svg {
-        margin-right: 0.4em;
-      }
-      a {
-        color: inherit; // Para herdar a cor do texto do elemento pai
-        text-decoration: none; // Para remover a decoração do link
-      }
-    }
-    li:first-child {
-      margin-right: 1rem;
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  .navbarWrapper {
-    box-sizing: border-box;
-    width: 100%;
-    height: fit-content;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $space-6;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+  }
 
-    .logo {
-      display: none;
-    }
-    .navLinks {
-      flex-direction: column;
-    }
-    .siteIcon {
-      display: none;
-    }
-    li {
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    cursor: pointer;
+    text-decoration: none;
+    color: $text-primary;
+
+    .logoIcon {
+      width: 40px;
+      height: 40px;
+      background: $gradient-primary;
+      border-radius: $radius-lg;
+      display: flex;
       align-items: center;
-      margin-bottom: 0.6em;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: $shadow-md;
     }
-    li:last-child{
-      margin-bottom: 0em;
+
+    span {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: $text-primary;
+    }
+  }
+
+  .navLinks {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .navLink {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+    padding: $space-2 $space-4;
+    border-radius: $radius-lg;
+    color: $text-secondary;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: $primary;
+      background: rgba(59, 130, 246, 0.1);
+      border-color: rgba(59, 130, 246, 0.2);
+      transform: translateY(-1px);
+    }
+
+    svg {
+      opacity: 0.8;
+    }
+  }
+
+  .menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: $text-primary;
+    cursor: pointer;
+    padding: $space-2;
+    border-radius: $radius-md;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: $gray-100;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .mobileMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid $border;
+    padding: $space-4 $space-6;
+    display: none;
+    flex-direction: column;
+    gap: $space-2;
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+
+  .mobileNavLink {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    padding: $space-3 $space-4;
+    border-radius: $radius-lg;
+    color: $text-secondary;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: $primary;
+      background: rgba(59, 130, 246, 0.1);
+      border-color: rgba(59, 130, 246, 0.2);
+    }
+
+    svg {
+      opacity: 0.8;
     }
   }
 }
