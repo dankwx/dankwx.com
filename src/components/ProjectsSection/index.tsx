@@ -8,15 +8,18 @@ import minePrint from "../../assets/print.png";
 import pettresPrint from "../../assets/pettres.png";
 import copypasteSite from "../../Pages/Home/danlucopypaste.png";
 import diarioPrint from "../../assets/diarioPrint.png";
+import mirsuiPrint from "../../assets/mirsuiPrint.png";
 import reactIcon from "../../assets/react.png";
 import luaIcon from "../../assets/lua.png";
 import nextjsIcon from "../../assets/nextjs-icon.png";
+import typescriptIcon from "../../assets/ts-logo-128.png";
+import postgresqlIcon from "../../assets/elephant.png";
 
 interface Project {
   title: string;
   description: string;
   image: string;
-  technologies: Array<{ name: string; icon: string }>;
+  technologies: Array<{ name: string; icon?: string }>;
   github: string;
   demo?: string;
   featured?: boolean;
@@ -24,6 +27,20 @@ interface Project {
 
 export default function ProjectsSection() {
   const projects: Project[] = [
+    {
+      title: "Mirsui",
+      description: "Rede social baseada em música. Uma plataforma completa onde usuários podem compartilhar suas músicas favoritas, descobrir novos artistas e conectar-se através da música.",
+      image: mirsuiPrint,
+      technologies: [
+        { name: "Next.js", icon: nextjsIcon },
+        { name: "React.js", icon: reactIcon },
+        { name: "TypeScript", icon: typescriptIcon },
+        { name: "PostgreSQL", icon: postgresqlIcon }
+      ],
+      github: "https://github.com/dankwx/Mirsui",
+      demo: "https://www.mirsui.com/",
+      featured: true
+    },
     {
       title: "Minecraft Smart Hub",
       description: "Meu projeto mais ambicioso. Este projeto permite a interação de um mundo no Minecraft com a internet. Uma Smart House, só que no Minecraft.",
@@ -164,7 +181,7 @@ export default function ProjectsSection() {
                   <div className={styles.technologies}>
                     {project.technologies.map((tech, techIndex) => (
                       <div key={techIndex} className={styles.tech}>
-                        <img src={tech.icon} alt={tech.name} />
+                        {tech.icon && <img src={tech.icon} alt={tech.name} />}
                         <span>{tech.name}</span>
                       </div>
                     ))}
