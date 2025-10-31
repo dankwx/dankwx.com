@@ -9,6 +9,7 @@ import pettresPrint from "../../assets/pettres.png";
 import copypasteSite from "../../Pages/Home/danlucopypaste.png";
 import diarioPrint from "../../assets/diarioPrint.png";
 import mirsuiPrint from "../../assets/mirsuiPrint.png";
+import wiie from "../../assets/wiie.png";
 import reactIcon from "../../assets/react.png";
 import luaIcon from "../../assets/lua.png";
 import nextjsIcon from "../../assets/nextjs-icon.png";
@@ -39,6 +40,19 @@ export default function ProjectsSection() {
       ],
       github: "https://github.com/dankwx/Mirsui",
       demo: "https://www.mirsui.com/",
+      featured: true
+    },
+    {
+      title: "What if Internet ends",
+      description: "Uma experiência interativa que explora cenários hipotéticos sobre o fim da internet. Um projeto criativo que combina storytelling e tecnologia web moderna.",
+      image: wiie,
+      technologies: [
+        { name: "Next.js", icon: nextjsIcon },
+        { name: "React.js", icon: reactIcon },
+        { name: "TypeScript", icon: typescriptIcon }
+      ],
+      github: "https://github.com/dankwx/whatifinternetends",
+      demo: "https://whatifinternetends.com/",
       featured: true
     },
     {
