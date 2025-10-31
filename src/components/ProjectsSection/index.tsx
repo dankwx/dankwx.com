@@ -44,7 +44,7 @@ export default function ProjectsSection() {
     },
     {
       title: "What if Internet ends",
-      description: "Uma experiência interativa que explora cenários hipotéticos sobre o fim da internet. Um projeto criativo que combina storytelling e tecnologia web moderna.",
+      description: "Uma experiência interativa sobre um cenário hipotético sobre o fim da internet. Visual retrô e minimalista, e hyper otimizado (com SEO também)",
       image: wiie,
       technologies: [
         { name: "Next.js", icon: nextjsIcon },
