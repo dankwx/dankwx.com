@@ -46,8 +46,7 @@ export default function HeroSection() {
             </motion.h2>
             <motion.p className={styles.description} variants={itemVariants}>
               Comprometido com a programação, segurança web, experiência de
-              usuário e acessibilidade. Criando interfaces modernas e funcionais
-              desde 2012.
+              usuário e acessibilidade. Desde Sempre criando interfaces modernas e funcionais.
             </motion.p>
             
             <motion.div className={styles.actions} variants={itemVariants}>
