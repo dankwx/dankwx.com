@@ -74,16 +74,6 @@ export default function ProjectsSection() {
       github: "https://github.com/dankwx/copyPasteSite",
       demo: "https://danlu-copy-paste.vercel.app/"
     },
-    {
-      title: "Diário",
-      description: "Um projeto simples que fiz usando React, para eu guardar anotações e pensamentos, não contém informações pessoais ou sensíveis.",
-      image: diarioPrint,
-      technologies: [
-        { name: "React.js", icon: reactIcon }
-      ],
-      github: "https://github.com/dankwx/sitezin",
-      demo: "https://sitezin-sooty.vercel.app/"
-    }
   ];
 
   const containerVariants = {
