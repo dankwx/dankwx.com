@@ -42,7 +42,7 @@ export default function HeroSection() {
               Daniel Kondlatsch
             </motion.h1>
             <motion.h2 className={styles.title} variants={itemVariants}>
-              Front-End Developer
+              Software Engineer
             </motion.h2>
             <motion.p className={styles.description} variants={itemVariants}>
               Comprometido com a programação, segurança web, experiência de
