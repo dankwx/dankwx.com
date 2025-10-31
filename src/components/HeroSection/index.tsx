@@ -51,13 +51,13 @@ export default function HeroSection() {
             
             <motion.div className={styles.actions} variants={itemVariants}>
               <motion.a
-                href="#projetos"
+                href="#experiencias"
                 className={`${styles.btn} ${styles.btnPrimary}`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <ArrowDown size={18} />
-                Ver Projetos
+                Ver Experiências
               </motion.a>
               <motion.a
                 href="mailto:danielpettres@gmail.com"

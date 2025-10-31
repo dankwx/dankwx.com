@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Briefcase, Award } from "lucide-react";
+import { Briefcase, Award, ArrowDown } from "lucide-react";
 import React, { useState } from "react";
 import styles from "./ExperienceSection.module.scss";
 
@@ -71,7 +71,7 @@ export default function ExperienceSection() {
   };
 
   return (
-    <section className={styles.experience}>
+    <section id="experiencias" className={styles.experience}>
       <div className={styles.container}>
         <motion.div
           className={styles.content}
@@ -117,19 +117,16 @@ export default function ExperienceSection() {
             ))}
           </motion.div>
 
-          <motion.div className={styles.stats} variants={itemVariants}>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>3+</div>
-              <div className={styles.statLabel}>Anos de Experiência</div>
-            </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>4</div>
-              <div className={styles.statLabel}>Projetos Empresariais</div>
-            </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>8+</div>
-              <div className={styles.statLabel}>Tecnologias</div>
-            </div>
+          <motion.div className={styles.projectsButton} variants={itemVariants}>
+            <motion.a
+              href="#projetos"
+              className={styles.btn}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <ArrowDown size={18} />
+              Ver Projetos
+            </motion.a>
           </motion.div>
         </motion.div>
       </div>

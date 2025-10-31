@@ -274,4 +274,38 @@
       }
     }
   }
+
+  .projectsButton {
+    display: flex;
+    justify-content: center;
+    margin-top: $space-8;
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: $space-2;
+      background: $gradient-primary;
+      color: white;
+      padding: $space-4 $space-8;
+      border-radius: $radius-xl;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: $shadow-md;
+
+      &:hover {
+        box-shadow: $shadow-lg;
+        transform: translateY(-2px);
+      }
+
+      svg {
+        transition: transform 0.3s ease;
+      }
+
+      &:hover svg {
+        transform: translateY(2px);
+      }
+    }
+  }
 }
