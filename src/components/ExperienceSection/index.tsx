@@ -86,7 +86,7 @@ export default function ExperienceSection() {
               <span>Experiência</span>
             </div>
             <h2>Experiência no Mercado</h2>
-            <p>Trabalhei como desenvolvedor Front-End na Compass.uol, uma empresa de inovação tecnológica</p>
+            <p>Experiências no mercado profissional que obtive até o momento</p>
           </motion.div>
 
           <motion.div className={styles.experienceGrid} variants={itemVariants}>
