@@ -69,7 +69,7 @@ export default function ExperienceSection() {
               <Briefcase size={20} />
               <span>Experiência</span>
             </div>
-            <h2>1 Ano de Experiência no Mercado</h2>
+            <h2>3 Ano de Experiência no Mercado</h2>
             <p>Trabalhei como desenvolvedor Front-End na Compass.uol, uma empresa de inovação tecnológica</p>
           </motion.div>
 
