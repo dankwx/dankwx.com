@@ -104,7 +104,7 @@ export default function ExperienceSection() {
 
           <motion.div className={styles.stats} variants={itemVariants}>
             <div className={styles.stat}>
-              <div className={styles.statNumber}>1+</div>
+              <div className={styles.statNumber}>3+</div>
               <div className={styles.statLabel}>Anos de Experiência</div>
             </div>
             <div className={styles.stat}>
