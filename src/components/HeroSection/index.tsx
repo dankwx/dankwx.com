@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Download, Mail } from "lucide-react";
 import React from "react";
 import styles from "./HeroSection.module.scss";
-import profileImg from "../../Pages/Home/profile3.jpg";
+import profileImg from "../../Pages/Home/test5.png";
 
 export default function HeroSection() {
   const containerVariants = {
