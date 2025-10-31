@@ -53,7 +53,7 @@ export default function ProjectsSection() {
       featured: true
     },
     {
-      title: "Sistema de Controle de Vendas",
+      title: "Controle de Vendas - Micro-empresa familiar",
       description: "Projeto feito para uma necessidade real, para a empresa de Tornearia do meu pai. Supri totalmente a necessidade de papéis, permitindo o controle eficiente de registro de vendas.",
       image: pettresPrint,
       technologies: [

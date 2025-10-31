@@ -19,9 +19,9 @@ export default function ExperienceSection() {
     {
       company: "UnC - Atual",
       logo: "https://uni-contestado-site.s3.amazonaws.com/compressed/15211-1584478466055.jpg",
-      role: "Full Stack Developer",
+      role: "Consultor em Desenvolvimento de Sistemas",
       duration: "",
-      description: "Atualmente trabalhando como desenvolvedor full stack, desenvolvendo soluções com React no front-end e PostgreSQL no back-end, utilizando Docker para containerização.",
+      description: "Atualmente trabalhando como desenvolvedor full stack, desenvolvendo com React, e dando suporte a sistema legado PHP.",
       technologies: ["React","TypeScript", "PostgreSQL", "Docker", "Node.js"]
     },
     {
@@ -29,7 +29,7 @@ export default function ExperienceSection() {
       logo: "https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo-1.png",
       role: "Analista de Sistemas",
       duration: "",
-      description: "Atuei como desenvolvedor Front-end na equipe da Sicredi, migrando seu projeto inteiramente em Angular para React. Também criei pequenas features nas páginas de consulta por CPF.",
+      description: "Atuei como desenvolvedor Front-end na equipe da Sicredi, auxiliando a migrar seu projeto em Angular para React, também criei pequenas features nas páginas de consultas pessoais por CPF.",
       technologies: ["React", "Angular", "Styled Components", "GitLab", "Scrum"]
     },
     {
