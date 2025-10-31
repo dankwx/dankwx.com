@@ -17,7 +17,7 @@ export default function ExperienceSection() {
 
   const experiences: Experience[] = [
     {
-      company: "UnC",
+      company: "UnC - Atual",
       logo: "https://uni-contestado-site.s3.amazonaws.com/compressed/15211-1584478466055.jpg",
       role: "Full Stack Developer",
       duration: "",
@@ -27,7 +27,7 @@ export default function ExperienceSection() {
     {
       company: "Compass.uol - Sicredi",
       logo: "https://logodownload.org/wp-content/uploads/2017/11/sicredi-logo-1.png",
-      role: "Front-end Developer",
+      role: "Analista de Sistemas",
       duration: "",
       description: "Atuei como desenvolvedor Front-end na equipe da Sicredi, migrando seu projeto inteiramente em Angular para React. Também criei pequenas features nas páginas de consulta por CPF.",
       technologies: ["React", "Angular", "Styled Components", "GitLab", "Scrum"]
@@ -35,7 +35,7 @@ export default function ExperienceSection() {
     {
       company: "Compass.uol - Poliedro",
       logo: "https://funlec.com.br/wp-content/uploads/2023/09/Logo_Poliedro_Horiz_SIST_ENSINO.png",
-      role: "Shadow Developer",
+      role: "Analista de Sistemas",
       duration: "",
       description: "Atuei como shadow da equipe da Poliedro, onde fiz pequenas correções e implementações de features simples no sistema de livros PDF e provas online que o sistema de educação online Poliedro providencia.",
       technologies: ["React", "Styled Components", "Azure DevOps", "Scrum"]
