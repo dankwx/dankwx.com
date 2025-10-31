@@ -22,7 +22,7 @@ export default function ExperienceSection() {
       role: "Full Stack Developer",
       duration: "",
       description: "Atualmente trabalhando como desenvolvedor full stack, desenvolvendo soluções com React no front-end e PostgreSQL no back-end, utilizando Docker para containerização.",
-      technologies: ["React", "PostgreSQL", "Docker", "Node.js"]
+      technologies: ["React","TypeScript", "PostgreSQL", "Docker", "Node.js"]
     },
     {
       company: "Compass.uol - Sicredi",
@@ -38,7 +38,7 @@ export default function ExperienceSection() {
       role: "Analista de Sistemas",
       duration: "",
       description: "Atuei como shadow da equipe da Poliedro, onde fiz pequenas correções e implementações de features simples no sistema de livros PDF e provas online que o sistema de educação online Poliedro providencia.",
-      technologies: ["React", "Styled Components", "Azure DevOps", "Scrum"]
+      technologies: ["React","TypeScript", "Styled Components", "Azure DevOps", "Scrum"]
     },
     {
       company: "Compass.uol",
