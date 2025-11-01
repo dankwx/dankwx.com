@@ -125,7 +125,7 @@ export default function ProjectsSection() {
               <Code size={20} />
               <span>Projetos</span>
             </div>
-            <h2>Alguns dos meus Projetos</h2>
+            <h2>Coisas que eu criei</h2>
             <p>
               Todos meus projetos são de autoria própria, criados para resolver problemas reais
               ou explorar novas tecnologias. Cada um representa uma jornada de aprendizado.

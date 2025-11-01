@@ -40,7 +40,7 @@ export default function Footer() {
               <span>Daniel Kondlatsch</span>
             </div>
             <p className={styles.tagline}>
-              Criando experiências digitais modernas e funcionais
+              Transformando café em código
             </p>
           </div>
 

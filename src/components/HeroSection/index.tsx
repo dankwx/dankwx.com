@@ -36,17 +36,18 @@ export default function HeroSection() {
         >
           <motion.div className={styles.textContent} variants={itemVariants}>
             <motion.p className={styles.greeting} variants={itemVariants}>
-              Olá, eu sou
+              Fala! Eu sou o
             </motion.p>
             <motion.h1 className={styles.name} variants={itemVariants}>
               Daniel Kondlatsch
             </motion.h1>
             <motion.h2 className={styles.title} variants={itemVariants}>
-              Software Engineer
+              Dev Full Stack
             </motion.h2>
             <motion.p className={styles.description} variants={itemVariants}>
-              Comprometido com a programação, segurança web, experiência de
-              usuário e acessibilidade. Desde Sempre criando interfaces modernas e funcionais.
+              Gosto de criar coisas que funcionam de verdade. Curto programação, 
+              segurança web e fazer telas que as pessoas gostem de ver(e usar). 
+              Resolver problemas reais com código também
             </motion.p>
             
             <motion.div className={styles.actions} variants={itemVariants}>
