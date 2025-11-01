@@ -53,7 +53,7 @@ export default function ProjectsSection() {
       ],
       github: "https://github.com/dankwx/whatifinternetends",
       demo: "https://whatifinternetends.com/",
-      featured: true
+      featured: false
     },
     {
       title: "Minecraft Smart Hub",
@@ -64,7 +64,7 @@ export default function ProjectsSection() {
         { name: "Lua", icon: luaIcon }
       ],
       github: "https://github.com/dankwx/minecraft-irl-interaction",
-      featured: true
+      featured: false
     },
     {
       title: "Controle de Vendas - Micro-empresa familiar",
@@ -76,7 +76,7 @@ export default function ProjectsSection() {
       ],
       github: "https://github.com/dankwx/sales-system-pettres",
       demo: "https://sales-system-pettres.vercel.app/",
-      featured: true
+      featured: false
     },
     {
       title: "CopiaCola",
